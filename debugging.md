@@ -1,5 +1,5 @@
-Exploits
-========
+Debugging
+=========
 
 Viewing assembly code for an executable:
 
