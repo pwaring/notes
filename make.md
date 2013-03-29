@@ -29,4 +29,7 @@ Effectively, this rule says: If the contents of `hello.c` or `hello.h` have chan
 
 Note that although `gcc` does not need to know about `hello.h`, because it will pick up the relationship when compiling `hello.c`, `make` does need a hint, otherwise any changes to `hello.h` will not force the object file to be rebuilt.
 
+Useful command line options
+---------------------------
 
+`-n`: Tells `make` to display the commands it would execute, without actually executing them.
