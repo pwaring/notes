@@ -87,3 +87,7 @@ Other general purpose registers:
  * EDI - Destination Index
 
 On 64-bit machines, 'E' is replaced with 'R', so RAX, RCX etc.
+
+EIP - Instruction Pointer, points to the current instruction which the CPU is reading.
+
+EFLAGS - Bitflags used for comparisons and memory segmentations.
