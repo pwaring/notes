@@ -61,8 +61,29 @@ Debugging a program:
 gdb -q ./program
 ```
 
-Useful commands within gdb:
+Useful commands within GDB:
 
  * `break main`: Break at the `main()` function.
  * `run`: Run the program to the next breakpoint.
  * `info registers`: Print contents of all registers.
+ 
+Registers
+---------
+
+General purpose registers:
+
+ * EAX - Accumulator
+ * ECX - Counter
+ * EDX - Data
+ * EBX - Base
+
+Mainly act as temporary registers for the CPU.
+
+Other general purpose registers:
+
+ * ESP - Stack Pointer
+ * EBP - Base Pointer
+ * ESI - Source Index
+ * EDI - Destination Index
+
+On 64-bit machines, 'E' is replaced with 'R', so RAX, RCX etc.
