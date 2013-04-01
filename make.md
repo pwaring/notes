@@ -29,6 +29,30 @@ Effectively, this rule says: If the contents of `hello.c` or `hello.h` have chan
 
 Note that although `gcc` does not need to know about `hello.h`, because it will pick up the relationship when compiling `hello.c`, `make` does need a hint, otherwise any changes to `hello.h` will not force the object file to be rebuilt.
 
+A rule does not have to be defined on a single line. Each time `make` encounters a target, it adds the prerequisites to the dependency graph. For example, the following rules are identical:
+
+```
+hello.o: hello.c hello.h
+	gcc -c hello.c
+```
+
+```
+hello.o: hello.h
+hello.o: hello.c
+	gcc -c hello.c
+```
+
+Wildcards can be used like so:
+
+```
+program: *.c
+	$(CC) -o $@ $^
+```
+
+Be careful with wildcards, as they can have unintended effects. For example, the rule above will compile all files ending in `.c` in the current directory. If a new `.c` file is added - intentionally or otherwise - it will be compiled and linked into `program`.
+
+Wildcards in targets and prerequisites are expanded by `make`, whereas those in commands are expanded by the spawned subshell at the point of execution.
+
 Useful command line options
 ---------------------------
 
