@@ -24,3 +24,5 @@ jge	.LBB0_4
 'if i >= 10, jump to the code block after the loop'.
 
 Neither compiler compares the integer `10` with the contents of `i`. Although the approaches taken by the compilers are functionally identical, it is interesting that they have both decided to generate assembly with different logic to the original code, yet in two different ways.
+
+Furthermore, in both cases the compiler does not compile the `i++` statement within the `for` loop to an `inc` command, contrary to what most C programming books would claim. Possibly the case that the difference between `inc` and `add` is non-existant on modern processors, or that the processor itself will automatically treat `inc (source)` and `add $1, (source)` the same.
