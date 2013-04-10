@@ -21,6 +21,7 @@ Writers
 Blogs and websites of individual writers, some of whom have published work.
 
  * [Craig Pay](http://craigpay.com/)
+ * [Charles Stross](http://www.antipope.org/charlie/)
 
 Useful links
 ------------
