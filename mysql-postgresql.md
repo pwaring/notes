@@ -1,7 +1,7 @@
 MySQL to PostgreSQL
 ===================
 
-Simple script for creating `Result` classes from an existing MySQL database. Taken from `DBIx::Class::Schema::Loader` documentation, with corrections:
+Simple script for creating `Result` classes from an existing MySQL database, then producing a PostgreSQL schema file from those classes:
 
 ```
 #!/usr/bin/perl
@@ -9,12 +9,19 @@ Simple script for creating `Result` classes from an existing MySQL database. Tak
 use Modern::Perl;
 use DBIx::Class::Schema::Loader qw/ make_schema_at /;
 
+my $dsn = 'dbi:mysql:dbname=database';
+my $user = '';
+my $pass = '';
+
 make_schema_at(
-  'DB::Schema',
+  'MyDB::Schema',
   { debug => 1, dump_directory => './lib' },
-  [ 'dbi:mysql:dbname=database', 'username', 'password'
+  [ $dsn, $user, $pass
   ],
 );
+
+my $schema = MyDB::Schema->connect($dsn, $user, $pass);
+$schema->create_ddl_dir(['PostgreSQL'], '0.1', './', undef, { add_drop_table => 0 });
 ```
 
 Useful links
