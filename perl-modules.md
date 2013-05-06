@@ -40,7 +40,7 @@ Creating a skeleton module is simple:
 
     $ dzil new Module::Name
 
-
+Open `lib/Module/Name.pm`
 
 Links
 -----
