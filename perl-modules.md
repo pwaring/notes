@@ -20,6 +20,8 @@ our $VERSION = 0.01;
 
 'A module is simply a file that contains one or more packages, though it’s generally recommended to have one package per module.' (Beginning Perl).
 
+'A distribution is a collection of metadata and one or more modules which forms a single redistributable, testable, and installable unit' (Modern Perl).
+
 Things to remember
 ------------------
 
@@ -27,10 +29,45 @@ Things to remember
  * The `package` statement is block or file scoped. By keeping each package in an individual file, you can ensure that all packages are file scoped and not have to worry about the differences.
  * There is no concept of private subroutines in Perl. However, a subroutine beginning with an underscore is considered by convention to be private.
 
+Module::Starter
+---------------
+
+`Module::Starter` helps set up a skeleton module directory tree through the `module-starter` command.
+
+To avoid having to specify certain arguments each time you run `module-starter`, first create a file `$HOME/.module-starter/config` and add the following lines:
+
+```
+author: Your Name
+email: your@email.address
+```
+
+Creating a new module is then as simple as running:
+
+    module-starter --module=Module::Name
+
+You can also include multiple modules in your distribution:
+
+    module-starter --module=Module::Name,Module::Name::Something
+
+The `Makefile.PL` file contains some metadata about the distribution. The most important option is `PREREQ_PM`, which is a hash of the Perl modules which are a prerequisite for this distribution - i.e. if you install the distribution via CPAN, it will automatically install these prerequisites first.
+
+You can build a distribution by running:
+
+    perl Makefile.PL && make && make test && make dist
+
+If you want to use `Module::Build`, pass the `-mb` command when creating a module:
+
+    module-starter --module=Module::Name,Module::Name::Something -mb
+
+Building a distribution in this way can be done with the following command:
+
+    perl Build.PL && ./Build && ./Build test && ./Build dist
+
+
 Dist::Zilla
 -----------
 
-Dist::Zilla is a collection of modules which aims to automate the boring parts of packaging - especially those which you might forget.
+Dist::Zilla is a collection of modules which aims to automate the boring parts of packaging - especially those which you might forget (e.g. creating a `MANIFEST`).
 
 The first time you run Dist::Zilla, you have to set up some configuration variables:
 
