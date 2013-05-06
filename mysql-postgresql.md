@@ -24,6 +24,16 @@ my $schema = MyDB::Schema->connect($dsn, $user, $pass);
 $schema->create_ddl_dir(['PostgreSQL'], '0.1', './', undef, { add_drop_table => 0 });
 ```
 
+Pre-migration checks
+--------------------
+
+Two ways of testing to see whether data needs to be cleaned up before migrating:
+
+ 1. Quick scan of tables for obvious 'bad' values (e.g. DATE columns with '0000-00-00') using WHERE clauses - i.e. a blacklist.
+ 2. Exhaustive checks of every row - i.e. a whitelist.
+
+Probably also a good idea to check foreign key relationships which have not explicitly been defined by the use of `REFERENCES`.
+
 Useful links
 ------------
 
