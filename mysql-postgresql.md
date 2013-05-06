@@ -38,6 +38,7 @@ Reasons for pre-migration checks include:
 
   * MySQL is not as strict as PostgreSQL about validating data (or at least, not with the default MySQL configuration).
   * MySQL will usually enforce referential integrity if foreign keys are explicitly defined, but not all developers add the relevant `REFERENCES` constraints to their schemas.
+ * Easier to identify and fix bad data whilst still using MySQL, and having a clean data set should make migration smoother.
 
 Useful links
 ------------
