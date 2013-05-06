@@ -63,6 +63,12 @@ Building a distribution in this way can be done with the following command:
 
     perl Build.PL && ./Build && ./Build test && ./Build dist
 
+Some of the tests require the following modules:
+
+```
+Test::Pod
+Test::Pod::Coverage
+```
 
 Dist::Zilla
 -----------
