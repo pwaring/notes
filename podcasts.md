@@ -6,12 +6,17 @@ Business
 
  * [The Bottom Line](http://www.bbc.co.uk/podcasts/series/bottomline)
  * [MoneyTalk](http://www.fool.co.uk/money-talk/) - Often fails to download
+ * [Hard Currency](http://podcast.ft.com/index.php?sid=57) - FT
+ * [FT Money Show](http://podcast.ft.com/index.php?sid=22)
+ * [FT News](http://podcast.ft.com/index.php?sid=29)
+ * [Banking Weekly](http://podcast.ft.com/index.php?sid=44) - FT
 
 Politics
 --------
 
  * [Politics Weekly](http://www.guardian.co.uk/politics/series/politicsweekly) - The Guardian
  * [Pienaar's Politics](http://www.bbc.co.uk/podcasts/series/pienaar) - BBC Radio 5 Live
+ * [New Statesman](http://www.newstatesman.com/podcast)
 
 Technology
 ----------
