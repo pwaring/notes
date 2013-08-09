@@ -39,6 +39,8 @@ To avoid having to specify certain arguments each time you run `module-starter`,
 ```
 author: Your Name
 email: your@email.address
+builder: Module::Build
+verbose: 1
 ```
 
 Creating a new module is then as simple as running:
@@ -58,6 +60,8 @@ You can build a distribution by running:
 If you want to use `Module::Build`, pass the `-mb` command when creating a module:
 
     module-starter --module=Module::Name,Module::Name::Something -mb
+
+Or specify `builder: Module::Build` in your configuration file.
 
 Building a distribution in this way can be done with the following command:
 
