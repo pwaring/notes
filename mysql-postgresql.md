@@ -43,6 +43,7 @@ Reasons for pre-migration checks include:
 Useful links
 ------------
 
+ * [Migrating from MySQL to PostgreSQL](http://tapoueh.org/blog/2013/08/08-MySQL-to-PostgreSQL.html) - Blog article about tool for migration.
  * [py-mysql2pgsql](https://github.com/philipsoutham/py-mysql2pgsql) - Python module for converting MySQL to PostgreSQL. Did not work for me, but that may be due to my lack of Python knowledge and not having all the dependencies.
  * [How to make a proper migration from MySQL to PostgreSQL](http://wiki.postgresql.org/wiki/How_to_make_a_proper_migration_from_MySQL_to_PostgreSQL) - From 2009, so generic advice is useful but other parts may be out of date.
  * [Converting from other Databases to PostgreSQL](http://wiki.postgresql.org/wiki/Converting_from_other_Databases_to_PostgreSQL) - Starting point for jumping off to other sites.
