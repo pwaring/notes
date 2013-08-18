@@ -48,3 +48,24 @@ The Internet Assigned Number Authority (IANA) oversees the assignment of well-kn
 The port number registry can be found online:
 
 http://www.iana.org/assignments/port-numbers
+
+Sockets
+-------
+
+There are two main types of sockets within TCP/IP:
+
+ * Stream sockets: Use TCP as the end-to-end protocol.
+ * Datagram sockets: Use UDP as the protocol.
+
+Basic TCP client
+----------------
+
+The four basic steps for a TCP client to communicate are:
+
+ # Create a TCP socket using `socket()`.
+ # Connect to the server using `connect()`.
+ # Send/receive data using `send()` and `recv()`.
+ # Close the connection using `close()`.
+
+
+ 
