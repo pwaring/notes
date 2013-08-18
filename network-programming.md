@@ -62,10 +62,10 @@ Basic TCP client
 
 The four basic steps for a TCP client to communicate are:
 
- # Create a TCP socket using `socket()`.
- # Connect to the server using `connect()`.
- # Send/receive data using `send()` and `recv()`.
- # Close the connection using `close()`.
+ 1. Create a TCP socket using `socket()`.
+ 1. Connect to the server using `connect()`.
+ 1. Send/receive data using `send()` and `recv()`.
+ 1. Close the connection using `close()`.
 
 
  
