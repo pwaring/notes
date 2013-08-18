@@ -57,6 +57,23 @@ There are two main types of sockets within TCP/IP:
  * Stream sockets: Use TCP as the end-to-end protocol.
  * Datagram sockets: Use UDP as the protocol.
 
+Byte order
+----------
+
+There are two possible ways of ordering bytes:
+
+ * Big endian: Largest bytes stored first, so `abcd` is `ab`, `cd`.
+ * Little endian: Smallest bytes stored first, so `abcd` is `cd`, `ab`.
+
+The byte order for networks is always big endian, however different architectures have different host byte orders, and some even allow switching between the two. Fortunately, there are four functions for converting between the two:
+
+ * `htons()`: Host to network short.
+ * `htonl()`: Host to network long.
+ * `ntohs()`: Network to host short.
+ * `ntohl()`: Network to host long.
+
+The header file for these functions on a Linux system is usually `arpa/inet.h`.
+
 Basic TCP client
 ----------------
 
