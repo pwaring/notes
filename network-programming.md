@@ -20,13 +20,18 @@ These addresses can only be used for communicating between hosts on the same net
 Private use addresses
 ---------------------
 
-Three ranges of addresses are reserved in IPv4 for private internal use:
+Three ranges of addresses are reserved in IPv4 for private internal use (often using NAT):
 
  * 192.168.x.x
  * 172.16-31.x.x
  * 10.x.x.x
 
 Generally speaking, the host with the private address must initiate communications in order to talk to the outside world.
+
+Example addresses
+-----------------
+
+Any IP addresses in the block 192.0.2.x are reserved for documentation (e.g. example IP addresses). See RFCs 1166, 5735 and 5737 for more details.
 
 Multicast addresses
 -------------------
