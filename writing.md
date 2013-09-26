@@ -28,4 +28,5 @@ Useful links
 ------------
 
  * [Neil Gaiman - FAQs](http://www.neilgaiman.com/p/FAQs)
- * [Kate Mosses' Advice to Writers](http://www.katemosse.co.uk/index.php/kates-advice-to-writers/)
+ * [Kate Mosses Advice to Writers](http://www.katemosse.co.uk/index.php/kates-advice-to-writers/)
+ * [Book signing etiquette](http://www.trudicanavan.com/2011/04/book-signing-etiquette/) - Trudi Canavan
