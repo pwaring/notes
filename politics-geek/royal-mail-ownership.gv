@@ -1,0 +1,53 @@
+/*
+
+Line colours:
+Black: Full ownership
+Blue: Partial ownership
+Green: Commercial relationship
+Red: Government relationship
+
+*/
+
+digraph royal_mail_ownership
+{
+  rm_plc [label="Royal Mail plc", shape=box];
+  rm_group [label="Royal Mail Group Limited", shape=box];
+
+  rm_investments [label="Royal Mail Investments Limited", shape=box];
+  general_logistics [label="General Logistics Systems B.V.", shape=box];
+  parcelforce [label="Parcelforce", shape=ellipse];
+
+  rm_brand [label="Royal Mail", shape=ellipse];
+
+  rm_estates [label="Royal Mail Estates Limited", shape=box];
+
+  postal_services_holding [label="Postal Services Holding Company plc", shape=box];
+
+  other_investors [label="Other Investors", shape=hexagon];
+
+  post_office_ltd [label="Post Office Limited", shape=box];
+  post_office [label="Post Office", shape=ellipse];
+
+  dept_bis [label="Department for Business, Innovation and Skills", shape=hexagon];
+  shareholder_executive [label="Shareholder Executive", shape=hexagon];
+
+  rm_plc -> rm_group;
+  rm_plc -> rm_investments;
+  rm_plc -> rm_estates;
+
+  rm_group -> rm_brand;
+
+  rm_investments -> general_logistics;
+  general_logistics -> parcelforce;
+
+  postal_services_holding -> post_office_ltd;
+  post_office_ltd -> post_office;
+
+  postal_services_holding -> rm_plc [color=blue, label="30%"];
+  other_investors -> rm_plc [color=blue, label="70%"];
+
+  dept_bis -> shareholder_executive [color=red, label="Oversight"];
+  shareholder_executive -> postal_services_holding [color=red, label="Management"];
+
+  rm_group -> post_office_ltd [color=green, dir="both"];
+}
