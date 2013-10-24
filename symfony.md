@@ -1,6 +1,18 @@
 Symfony
 =======
 
+Concepts
+--------
+
+*Front Controller:* A single PHP file which handles every request coming into the application, usually `/index.php`. The front controller is always executed, and then the components of the URL are routed internally to the correct code. The three step process is:
+
+ 1. Execute front controller.
+ 2. Route request to relevant PHP function.
+ 3. Execute function and return a `Response` object.
+
+Installation
+------------
+
 Download Composer:
 
     curl -sS https://getcomposer.org/installer | php
