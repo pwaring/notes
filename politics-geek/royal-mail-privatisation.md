@@ -21,6 +21,15 @@ Need to consider the following factors:
  * Government did price at the top of the indicated range, but failed to use their reserve power to go above if demand was strong.
  * Could claim that prices are hard to get right, but evidence contradicts this? Also, whole point of advance bookrunning is to establish the price which institutions are prepared to pay.
 
+Sources
+-------
+
+ * Economist
+ * New Statesman
+ * Telegraph
+ * Guardian
+ * BBC News
+
 Links
 -----
 
