@@ -10,6 +10,11 @@ Concepts
  2. Route request to relevant PHP function.
  3. Execute function and return a `Response` object.
 
+Requirements
+------------
+
+ * PHP 5.3.8 (effectively Debian Wheezy)
+
 Installation
 ------------
 
