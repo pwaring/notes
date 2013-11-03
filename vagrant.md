@@ -1,6 +1,11 @@
 Vagrant
 =======
 
+Articles
+--------
+
+ * [Creating a Debian Wheezy Base Box for Vagrant](https://mikegriffin.ie/blog/20130418-creating-a-debian-wheezy-base-box-for-vagrant/)
+
 Talks
 -----
 
