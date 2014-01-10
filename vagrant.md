@@ -5,6 +5,9 @@ Articles
 --------
 
  * [Creating a Debian Wheezy Base Box for Vagrant](https://mikegriffin.ie/blog/20130418-creating-a-debian-wheezy-base-box-for-vagrant/)
+ * [Creating a Custom Vagrant Box from Scratch](http://www.skoblenick.com/vagrant/creating-a-custom-box-from-scratch/)
+ * [Why does disabling --hwvirtex in Vagrant solves problems running a 64-bit OS?](http://stackoverflow.com/questions/19490769/why-does-disabling-hwvirtex-in-vagrant-solves-problems-running-a-64-bit-os)
+ * [Hardware vs software virtualization (VirtualBox)](https://www.virtualbox.org/manual/ch10.html#hwvirt)
 
 Talks
 -----
