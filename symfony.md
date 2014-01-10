@@ -20,17 +20,17 @@ Installation
 
 Download Composer:
 
-    curl -sS https://getcomposer.org/installer | php
+    wget http://getcomposer.org/composer.phar
     
 This must not be placed in the same directory as the code.
 
 Download and install using Composer:
 
-    php composer.phar create-project symfony/framework-standard-edition . 2.3.1
+    php composer.phar create-project symfony/framework-standard-edition target-dir 2.3.7
 
-Replace `2.3.1` with the latest version of Symfony.
+Replace `2.3.7` with the latest version of Symfony and `target-dir` with the directory you want Symfony to be installed to.
 
-May need to change configuration in:
+You may need to change configuration in:
 
     app/config/parameters.yml
 
@@ -41,6 +41,10 @@ Check configuration:
 Starting the PHP built-in web server:
 
     php ./app/console server:run
+
+Check that configuration also works under the web server:
+
+    http://localhost:8000/config.php
 
 Access application at:
 
