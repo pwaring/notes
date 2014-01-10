@@ -16,3 +16,7 @@ Links
  * [Chris Anderson](https://twitter.com/chr1sa/statuses/395388032976556032) - Tweet which seems to have started the debate.
  * [The Ethics of Unpaid Labor and the OSS Community](http://ashedryden.com/blog/the-ethics-of-unpaid-labor-and-the-oss-community)
  * [Checking Our Privilege – Changing our job ads in response to a good challenge](http://www.mysociety.org/2013/11/29/checking-our-privilege-changing-our-job-ads-in-response-to-a-good-challenge/) - mySociety response.
+ * [So Github Is Not Your CV. It Still Matters](http://decomplecting.org/blog/2013/11/19/so-github-is-not-your-cv-it-still-matters/)
+ * [Why GitHub is not your CV](https://blog.jcoglan.com/2013/11/15/why-github-is-not-your-cv/)
+ * [The perils of mixing open source and money](http://david.heinemeierhansson.com/2013/the-perils-of-mixing-open-source-and-money.html)
+ * [Use Project-based Interviews Instead of "GitHub"](http://ejohn.org/blog/project-based-interviews/)
