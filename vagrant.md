@@ -1,6 +1,13 @@
 Vagrant
 =======
 
+Installation
+------------
+
+Generally best to use the latest stable version from the downloads page: http://www.vagrantup.com/downloads.html
+
+Only attempt to use the development version if you have no other option, as it is much more difficult to install.
+
 Articles
 --------
 
