@@ -1,6 +1,11 @@
 C
 =
 
+Compiler options
+----------------
+
+ * `-D`: Define this macro - e.g. `-D_BSD_SOURCE` is the same as including `#define _BSD_SOURCE 1`.
+
 GCC warning flags
 -----------------
 
