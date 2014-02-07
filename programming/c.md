@@ -16,6 +16,7 @@ GCC warning flags
 Links
 -----
 
+ * [comp.lang.c FAQ](http://c-faq.com/)
  * [The Descent to C](http://www.chiark.greenend.org.uk/~sgtatham/cdescent/)
  * [MSC06-CPP](https://www.securecoding.cert.org/confluence/display/cplusplus/MSC06-CPP.+Be+aware+of+compiler+optimization+when+dealing+with+sensitive+data) - CERT article on why your compiler might optimise away security functions.
  * [Does using SecureZeroMemory() really help to make the application more secure?](http://stackoverflow.com/questions/786093/does-using-securezeromemory-really-help-to-make-the-application-more-secure) - StackOverflow question, with some useful pointers in the answers.
