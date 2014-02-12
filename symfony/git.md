@@ -16,8 +16,6 @@ Remove reference to `Acme\DemoBundle\AcmeDemoBundle` in `app/AppKernel.php`
 
 Remove references to `AcmeDemoBundle` in `app/config/routing_dev.yml`.
 
-Remove references to `demo` rules in `app/config/security.yml`.
-
 Remove `src/Acme/`.
 
 ## Set up Git
@@ -32,7 +30,6 @@ app/logs/*
 vendor/
 app/config/parameters.yml
 composer.phar
-UPGRADE*.md
 ```
 
 Initialise git: `git init`

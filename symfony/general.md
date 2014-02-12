@@ -14,17 +14,9 @@
 
 ## Installation
 
-Download Composer:
+See the Symfony and Git (`git.md`) notes for information on setting up a basic install.
 
-    wget http://getcomposer.org/composer.phar
-    
-This must not be placed in the same directory as the code.
-
-Download and install using Composer:
-
-    php composer.phar create-project symfony/framework-standard-edition target-dir 2.4.*
-
-Replace `2.4.*` with the latest version of Symfony and `target-dir` with the directory you want Symfony to be installed to.
+## Configuration
 
 You may need to change configuration in:
 
