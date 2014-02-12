@@ -32,6 +32,7 @@ app/logs/*
 vendor/
 app/config/parameters.yml
 composer.phar
+UPGRADE*.md
 ```
 
 Initialise git: `git init`
