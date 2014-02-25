@@ -12,6 +12,8 @@ tar xzvf Symfony.tgz -C dest --strip-components=1
 
 ## Removing the AcmeDemoBundle
 
+**N.B.** Do not do this until you are an advanced user and have set up your own bundle, otherwise the default welcome page will not work.
+
 Remove reference to `Acme\DemoBundle\AcmeDemoBundle` in `app/AppKernel.php`
 
 Remove references to `AcmeDemoBundle` in `app/config/routing_dev.yml`.

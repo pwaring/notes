@@ -37,6 +37,25 @@ Check that configuration also works under the web server:
 Access application at:
 
     http://localhost:8000/app_dev.php
+    
+## File Permissions
+
+At the bottom of `app/console`, `web/app.php` and `web/app_dev.php`, add:
+
+```
+umask(0000);
+```
+
+**N.B.** This is not ideal, nor thread-safe, but does not require Access Control List functionality in your filesystem (not always enabled by default).
+
+## Creating a page
+
+Two steps are required to add a new page:
+
+ 1. Create a route
+ 2. Create a controller
+
+
 
 ## Requests and Responses
 
