@@ -55,7 +55,39 @@ Two steps are required to add a new page:
  1. Create a route
  2. Create a controller
 
+Before doing this, we need to create a bundle:
 
+```
+php app/console generate:bundle --namespace=Acme/HelloBundle --format=yml
+```
+
+This also places an in: `app/config/routing.yml`, which tells Symfony to look in the `Resources/config/routing.yml` file of the bundle for routing information.
+
+Add a new route to `src/Acme/HelloBundle/Resources/config/routing.yml`:
+
+```
+hello:
+  path: /hello/{name}
+  defaults: { _controller: AcmeHelloBundle:Hello:index }
+```
+
+To create a controller which can use templates, it must extend the `Controller` class:
+
+```
+namespace Acme\HelloBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class HelloController extends Controller
+{
+  public function indexAction($name)
+  {
+    return $this->render('AcmeHelloBundle:Hello:index.html.twig', array('name' => $name));
+  }
+}
+```
+
+The Twig template file can be found in: `Acme/HelloBundle/Resources/views/Hello/index.html.twig`.
 
 ## Requests and Responses
 
