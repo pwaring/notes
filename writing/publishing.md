@@ -1,20 +1,22 @@
-Publishing
-==========
+# Publishing
 
 Things to look into:
 
  * How does one become a proofreader?
+ 
+## Publisher guides
 
-LeanPub
--------
+ * [CUP: Humanities & Social Sciences](https://authornet.cambridge.org/information/proposaluk/hss/)
+ * [CUP: Production Guide](https://authornet.cambridge.org/information/productionguide/)
+
+## LeanPub
 
 Heard a bit about this recently, seems the current 'in thing'. Produce text in Markdown, LeanPub converts to various ebook formats. Authors can set a minimum and suggested price, and readers pay what they want.
 
  * http://blather.michaelwlucas.com/archives/1626
  * http://www.mooreds.com/wordpress/archives/838
 
-Useful generic links
---------------------
+## Useful generic links
 
  * http://blather.michaelwlucas.com/archives/1602
  * http://www.sfwa.org/for-authors/writer-beware/
