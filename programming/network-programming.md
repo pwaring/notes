@@ -1,24 +1,20 @@
-Network programming
-===================
+# Network programming
 
 IPv4 addresses can be mapped to IPv6 addresses by prefixing the four bytes in the IPv4 address with ::ffff. For example, 1.2.3.4 becomes :ffff:1.2.3.4.
 
-Loopback addresses
-------------------
+## Loopback addresses
 
  * IPv4: 127.0.0.1
  * IPv6: ::1
 
-Link-local addresses
---------------------
+## Link-local addresses
 
 These addresses can only be used for communicating between hosts on the same network, routers will not forward packets with these addresses as their destination.
 
  * IPv4: 169.254.x.x
  * IPv6: Any address starting FE80, FE90, FEA0 or FEB0.
 
-Private use addresses
----------------------
+## Private use addresses
 
 Three ranges of addresses are reserved in IPv4 for private internal use (often using NAT):
 
@@ -28,13 +24,11 @@ Three ranges of addresses are reserved in IPv4 for private internal use (often u
 
 Generally speaking, the host with the private address must initiate communications in order to talk to the outside world.
 
-Example addresses
------------------
+## Example addresses
 
 Any IP addresses in the block 192.0.2.x are reserved for documentation (e.g. example IP addresses). See RFCs 1166, 5735 and 5737 for more details.
 
-Multicast addresses
--------------------
+## Multicast addresses
 
 Multicast addresses potentially refer to an arbitrary number of destinations.
 
@@ -43,8 +37,7 @@ Multicast addresses potentially refer to an arbitrary number of destinations.
 
 Multicasting is an advanced subject and tends only to be used in large networks - especially for delivery of multimedia content.
 
-Port numbers
-------------
+## Port numbers
 
 Port numbers are the same for IPv4 and IPv6 and are represented by a 16 bit unsigned integer, giving a range of 1-65,535 (0 being reserved). Binding to a port below 1024 requires superuser/root privileges, although it is possible for a process to bind as root and then release these privileges and continue running as a different user.
 
@@ -54,16 +47,14 @@ The port number registry can be found online:
 
 http://www.iana.org/assignments/port-numbers
 
-Sockets
--------
+## Sockets
 
 There are two main types of sockets within TCP/IP:
 
  * Stream sockets: Use TCP as the end-to-end protocol.
  * Datagram sockets: Use UDP as the protocol.
 
-Byte order
-----------
+## Byte order
 
 There are two possible ways of ordering bytes:
 
@@ -79,8 +70,7 @@ The byte order for networks is always big endian, however different architecture
 
 The header file for these functions on a Linux system is usually `arpa/inet.h`.
 
-Converting IP addresses to structs
-----------------------------------
+## Converting IP addresses to structs
 
 Usually an IP address is represented as a string, e.g. 127.0.0.1 or ::1. However, in order to use these we have to convert them to the relevant struct.
 
@@ -94,8 +84,15 @@ inet_pton(AF_INET6, "::1", &(address6.sin6_addr));
 
 The `inet_ntop` function provides similar functionality in the opposite direction.
 
-Basic TCP client
-----------------
+## Error messages
+
+The `gai_strerror` function takes the result of a call to `getaddrinfo` and converts it into a human readable string. Example use:
+
+```
+fprintf(stderr, gai_strerror("getaddrinfo: %s\n", gai_strerror(status));
+```
+
+## Basic TCP client
 
 The four basic steps for a TCP client to communicate are:
 
