@@ -1,21 +1,24 @@
-C
-=
+# C
 
-Compiler options
-----------------
+## Compiler options
 
  * `-D`: Define this macro - e.g. `-D_BSD_SOURCE` is the same as including `#define _BSD_SOURCE 1`.
 
-GCC warning flags
------------------
+## GCC warning flags
 
  * `-Wall`: Enables a large number of warnings, though not all (despite the name).
  * `-Wextra`: Enables extra warnings above and beyond `-Wall`.
  * `-Werror`: Make all warnings into errors. Effectively this means that code which produces warnings will fail to compile.
 
-Links
------
+## Changes from C89 to C99
 
+ * Support for C++ style single-line comments, i.e. `// this is a comment`.
+ * Variables no longer have to be declared before code, e.g. `for (int i = 0; i < 9, i++)`.
+ * Support for variable length arrays, e.g. `int a[b][c]`.
+
+## Links
+
+ * [CProgramming.c](http://www.cprogramming.com/)
  * [comp.lang.c FAQ](http://c-faq.com/)
  * [The Descent to C](http://www.chiark.greenend.org.uk/~sgtatham/cdescent/)
  * [MSC06-CPP](https://www.securecoding.cert.org/confluence/display/cplusplus/MSC06-CPP.+Be+aware+of+compiler+optimization+when+dealing+with+sensitive+data) - CERT article on why your compiler might optimise away security functions.
