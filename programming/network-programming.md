@@ -79,6 +79,21 @@ The byte order for networks is always big endian, however different architecture
 
 The header file for these functions on a Linux system is usually `arpa/inet.h`.
 
+Converting IP addresses to structs
+----------------------------------
+
+Usually an IP address is represented as a string, e.g. 127.0.0.1 or ::1. However, in order to use these we have to convert them to the relevant struct.
+
+```
+struct sockaddr_in address;
+struct sockaddr_in6 address6;
+
+inet_pton(AF_INET, "127.0.0.1", &(address.sin_addr));
+inet_pton(AF_INET6, "::1", &(address6.sin6_addr));
+```
+
+The `inet_ntop` function provides similar functionality in the opposite direction.
+
 Basic TCP client
 ----------------
 
