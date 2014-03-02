@@ -92,6 +92,14 @@ The `gai_strerror` function takes the result of a call to `getaddrinfo` and conv
 fprintf(stderr, gai_strerror("getaddrinfo: %s\n", gai_strerror(status));
 ```
 
+## Compiling C
+
+When compiling C code with `gcc`, do not include the `std=X` argument (e.g. `std=c99`), otherwise you will receive warnings similar to this:
+
+```
+warning: implicit declaration of function ‘getaddrinfo’ [-Werror=implicit-function-declaration]
+```
+
 ## Basic TCP client
 
 The four basic steps for a TCP client to communicate are:
