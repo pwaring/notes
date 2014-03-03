@@ -18,9 +18,10 @@
 
 ## Links
 
+ * [The Definitive C Book Guide and List](http://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list)
  * [C: The Complete Nonsense](http://www.seebs.net/c/c_tcn4e.html) - Critique of Herbert Schildt's _C: The Complete Reference_.
  * [The Annotated Annotated C Standard](http://www.davros.org/c/schildt.html)
- * [CProgramming.c](http://www.cprogramming.com/)
+ * [CProgramming.com](http://www.cprogramming.com/)
  * [comp.lang.c FAQ](http://c-faq.com/)
  * [The Descent to C](http://www.chiark.greenend.org.uk/~sgtatham/cdescent/)
  * [MSC06-CPP](https://www.securecoding.cert.org/confluence/display/cplusplus/MSC06-CPP.+Be+aware+of+compiler+optimization+when+dealing+with+sensitive+data) - CERT article on why your compiler might optimise away security functions.
