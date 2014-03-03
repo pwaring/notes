@@ -18,6 +18,8 @@
 
 ## Links
 
+ * [C: The Complete Nonsense](http://www.seebs.net/c/c_tcn4e.html) - Critique of Herbert Schildt's _C: The Complete Reference_.
+ * [The Annotated Annotated C Standard](http://www.davros.org/c/schildt.html)
  * [CProgramming.c](http://www.cprogramming.com/)
  * [comp.lang.c FAQ](http://c-faq.com/)
  * [The Descent to C](http://www.chiark.greenend.org.uk/~sgtatham/cdescent/)
