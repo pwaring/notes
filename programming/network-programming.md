@@ -100,6 +100,27 @@ When compiling C code with `gcc`, do not include the `std=X` argument (e.g. `std
 warning: implicit declaration of function ‘getaddrinfo’ [-Werror=implicit-function-declaration]
 ```
 
+## Basic C program
+
+The most basic C program, using the `EXIT_SUCCESS` constant in `stdlib.h` (in practice this will be the same as `return 0`, but that is less readable and portable) is:
+
+```
+#include <stdlib.h>
+
+int main()
+{
+  return EXIT_SUCCESS;
+}
+```
+
+If you want to process command line arguments, change the declaration of `main` to:
+
+```
+int main(int argc, char *argv[])
+```
+
+However, your compiler may throw a warning if either of these parameters are unused.
+
 ## Basic TCP client
 
 The four basic steps for a TCP client to communicate are:
@@ -109,5 +130,18 @@ The four basic steps for a TCP client to communicate are:
  1. Send/receive data using `send()` and `recv()`.
  1. Close the connection using `close()`.
 
+### Creating hints struct
 
- 
+The most basic `hints` struct for a client can be created like so:
+
+```
+struct addrinfo hints;
+
+memset(&hints, 0, sizeof(hints));
+hints.ai_family = AF_UNSPEC; // Use IPv4 or IPv6
+hints.socktype = SOCK_STREAM; // TCP
+```
+
+## Links
+
+ * [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/)
