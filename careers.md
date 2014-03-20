@@ -4,6 +4,10 @@
 
  * [jobs.ac.uk](http://www.jobs.ac.uk/careers-advice/cv-templates)
 
+## Mailing lists
+
+ * [linuxjobs](https://mailman.lug.org.uk/mailman/listinfo/linuxjobs)
+
 ## Links
 
  * [Changing careers](http://www.careers.manchester.ac.uk/graduates/changingcareers/)
