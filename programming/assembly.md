@@ -1,5 +1,13 @@
-Assembly
-========
+# Assembly
+
+## Syntax
+
+Two main x86 assembly syntax:
+
+ * AT&T: Lots of $ and % symbols. Default for most disassembly tools on Linux.
+ * Intel: Cleaner and easier to read, requires the `-M intel` command line option to `objdump`.
+
+## Generating Assembly from C
 
 Generating assembly: Use the `-S` flag in gcc or clang, e.g. `gcc -S foo.c` produces `foo.s`.
 
@@ -27,7 +35,27 @@ Neither compiler compares the integer `10` with the contents of `i`. Although th
 
 Furthermore, in both cases the compiler does not compile the `i++` statement within the `for` loop to an `inc` command, contrary to what most C programming books would claim. Possibly the case that the difference between `inc` and `add` is non-existant on modern processors, or that the processor itself will automatically treat `inc (source)` and `add $1, (source)` the same.
 
-Links
------
+## Registers
+
+16-bit registers: AX, BX, CX, DX, FLAGS
+
+32-bit registers: EAX (Extended AX), EFLAGS etc.
+
+64-bit registers: RAX etc.
+
+Named registers:
+
+ * EAX: Accumulator
+ * EBX: Base
+ * ECX: Counter
+ * EDX: Data
+ * ESP: Stack Pointer
+ * EBP: Base Pointer
+ * ESI: Source Index
+ * EDI: Destination Index
+ * EIP: Instruction Point
+
+
+## Links
 
  * [Software optimization resources](http://www.agner.org/optimize/)

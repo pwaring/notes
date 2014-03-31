@@ -18,6 +18,7 @@
 
 ## Links
 
+ * [C11 atomic variables and the kernel](http://lwn.net/Articles/586838/)
  * [The Definitive C Book Guide and List](http://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list)
  * [C: The Complete Nonsense](http://www.seebs.net/c/c_tcn4e.html) - Critique of Herbert Schildt's _C: The Complete Reference_.
  * [The Annotated Annotated C Standard](http://www.davros.org/c/schildt.html)
