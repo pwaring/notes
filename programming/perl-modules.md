@@ -77,7 +77,7 @@ Test::Pod::Coverage
 Dist::Zilla
 -----------
 
-Dist::Zilla is a collection of modules which aims to automate the boring parts of packaging - especially those which you might forget (e.g. creating a `MANIFEST`).
+[Dist::Zilla](http://dzil.org/) is a collection of modules which aims to automate the boring parts of packaging - especially those which you might forget (e.g. creating a `MANIFEST`).
 
 The first time you run Dist::Zilla, you have to set up some configuration variables:
 
