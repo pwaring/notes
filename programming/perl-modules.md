@@ -1,8 +1,6 @@
-Perl Modules
-============
+# Perl Modules
 
-Skeleton module
----------------
+## Skeleton module
 
 Most basic package is:
 
@@ -13,7 +11,7 @@ use strict;
 use warnings;
 use autodie;
 
-our $VERSION = 0.01;
+our $VERSION = '0.01';
 
 1;
 ```
@@ -22,15 +20,13 @@ our $VERSION = 0.01;
 
 'A distribution is a collection of metadata and one or more modules which forms a single redistributable, testable, and installable unit' (Modern Perl).
 
-Things to remember
-------------------
+## Things to remember
 
  * Package files must always end with `1;`, since the last evaluated statement is the return value. Effectively this says `return true;`, except Perl does not have a built-in boolean data type.
  * The `package` statement is block or file scoped. By keeping each package in an individual file, you can ensure that all packages are file scoped and not have to worry about the differences.
  * There is no concept of private subroutines in Perl. However, a subroutine beginning with an underscore is considered by convention to be private.
 
-Module::Starter
----------------
+## Module::Starter
 
 `Module::Starter` helps set up a skeleton module directory tree through the `module-starter` command.
 
@@ -74,8 +70,7 @@ Test::Pod
 Test::Pod::Coverage
 ```
 
-Dist::Zilla
------------
+## Dist::Zilla
 
 [Dist::Zilla](http://dzil.org/) is a collection of modules which aims to automate the boring parts of packaging - especially those which you might forget (e.g. creating a `MANIFEST`).
 
@@ -87,10 +82,34 @@ Creating a skeleton module is simple:
 
     $ dzil new Module::Name
 
-Open `lib/Module/Name.pm`
+Open `lib/Module/Name.pm` and edit as normal.
 
-Links
------
+### Uploading to CPAN
+
+Add these three plugins to `dist.ini`:
+
+```
+[TestRelease]
+[ConfirmRelease]
+[UploadToCPAN]
+```
+
+Also create a `~/.pause` file with the following contents:
+
+```
+user USERNAME
+password YourPassword
+```
+
+Then to test and upload your distribution, run:
+
+    $ dzil release
+
+A trial release (which will not be indexed) can be created by running:
+
+    $ dzil release --trial
+
+## Links
 
  * [PrePAN](http://prepan.org/) - Get feedback on a module before submitting it to CPAN.
  * [Chapter 11. Packages and Modules](http://ofps.oreilly.com/titles/9781118013847/packages_and_modules.html) - From *Beginning Perl* (Wrox).
