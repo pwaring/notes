@@ -1,8 +1,10 @@
-Podcasts
-========
+# Podcasts
 
-Business
---------
+## General news
+
+ * [Telegram](http://blogs.telegraph.co.uk/news/author/telegram/) - The Telegraph
+
+## Business
 
  * [The Bottom Line](http://www.bbc.co.uk/podcasts/series/bottomline) - BBC Radio 4
  * [MoneyTalk](http://www.fool.co.uk/money-talk/) - Often fails to download
@@ -13,28 +15,24 @@ Business
  * [On the Money](http://www.bbc.co.uk/podcasts/series/otm) - BBC Radio 5 Live
  * [Peter Day's World of Business](http://www.bbc.co.uk/podcasts/series/worldbiz)
 
-Personal finance
-----------------
+## Personal finance
 
  * [Money Box](http://www.bbc.co.uk/podcasts/series/moneybox)
 
-Politics
---------
+## Politics
 
  * [Politics Weekly](http://www.guardian.co.uk/politics/series/politicsweekly) - The Guardian
  * [Pienaar's Politics](http://www.bbc.co.uk/podcasts/series/pienaar) - BBC Radio 5 Live
  * [New Statesman](http://www.newstatesman.com/podcast)
  * [Weekly Political Review](http://www.bbc.co.uk/podcasts/series/wpr) - BBC Radio 4
 
-Technology
-----------
+## Technology
 
  * [BSDTalk](http://bsdtalk.blogspot.co.uk/)
  * [FLOSS Weekly](http://twit.tv/show/floss-weekly)
  * [Tech Weekly](http://www.guardian.co.uk/technology/series/techweekly)
  
-Doctor Who
-----------
+## Doctor Who
 
  * [Big Finish](http://bigfinish.com/podcasts) - Includes Who's Round (Toby Hadoke)
  * [Who's The Boss](http://frogpants.com/podcasts/whos-the-boss/)
