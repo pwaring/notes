@@ -18,6 +18,8 @@
 
 ## Links
 
+ * [Deep C](http://www.slideshare.net/olvemaudal/deep-c)
+ * [To Become a Good C Programmer](http://fabiensanglard.net/c/index.php)
  * [C11 atomic variables and the kernel](http://lwn.net/Articles/586838/)
  * [The Definitive C Book Guide and List](http://stackoverflow.com/questions/562303/the-definitive-c-book-guide-and-list)
  * [C: The Complete Nonsense](http://www.seebs.net/c/c_tcn4e.html) - Critique of Herbert Schildt's _C: The Complete Reference_.
