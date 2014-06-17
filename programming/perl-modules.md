@@ -112,5 +112,4 @@ A trial release (which will not be indexed) can be created by running:
 ## Links
 
  * [PrePAN](http://prepan.org/) - Get feedback on a module before submitting it to CPAN.
- * [Chapter 11. Packages and Modules](http://ofps.oreilly.com/titles/9781118013847/packages_and_modules.html) - From *Beginning Perl* (Wrox).
  * [Version numbers should be boring](http://www.dagolden.com/index.php/369/version-numbers-should-be-boring/) - How to properly define version numbers in Perl modules (no idea if this is authoritative).
