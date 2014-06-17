@@ -59,3 +59,4 @@ Named registers:
 ## Links
 
  * [Software optimization resources](http://www.agner.org/optimize/)
+ * [Intel x86 JUMP quick reference](http://www.unixwiz.net/techtips/x86-jumps.html)
