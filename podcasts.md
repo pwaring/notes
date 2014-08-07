@@ -12,7 +12,6 @@
  * [FT Money Show](http://podcast.ft.com/index.php?sid=22)
  * [FT News](http://podcast.ft.com/index.php?sid=29)
  * [Banking Weekly](http://podcast.ft.com/index.php?sid=44) - FT
- * [On the Money](http://www.bbc.co.uk/podcasts/series/otm) - BBC Radio 5 Live
  * [Peter Day's World of Business](http://www.bbc.co.uk/podcasts/series/worldbiz)
 
 ## Personal finance
