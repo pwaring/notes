@@ -2,11 +2,6 @@
 
 ## Writing Perl modules using Dist::Zilla
 
-## Output buffering in Perl
+## PHPExcel examples
 
-```
-use IO::Handle;                                                                 
-STDOUT->autoflush(1);
-```
-
-Useful for when you want a logfile to be updated with every write (e.g. when running tee or tail).
+Demonstrate various simple tasks, such as formatting, iterators etc.
