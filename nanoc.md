@@ -21,7 +21,7 @@ Open `Rules` and change:
 
 ```
   if item[:extension] == 'css'
-    # don’t filter stylesheets
+    # don't filter stylesheets
 ```
 
 to:
