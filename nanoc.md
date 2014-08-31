@@ -10,8 +10,9 @@ gem install nanoc adsf
 
 Common commands:
 
- * `nanoc` - Compile the site
- * `nanoc view` - Start the webserver
+ * `nanoc` - Compile the site.
+ * `nanoc view` - Start the webserver.
+ * `nanoc create-site site-name` - Create a new site in `site-name` directory.
 
 ## Markdown
 
