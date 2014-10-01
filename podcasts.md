@@ -30,6 +30,8 @@
  * [BSDTalk](http://bsdtalk.blogspot.co.uk/)
  * [FLOSS Weekly](http://twit.tv/show/floss-weekly)
  * [Tech Weekly](http://www.guardian.co.uk/technology/series/techweekly)
+ * [Linux Voice](http://www.linuxvoice.com/category/podcasts/)
+ * [Ubuntu UK](http://podcast.ubuntu-uk.org/)
  
 ## Doctor Who
 
