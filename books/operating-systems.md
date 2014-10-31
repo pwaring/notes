@@ -29,5 +29,15 @@
  * Memory protection
  * Memory fragmentation - internal and external
  * Paging, page tables
- * 
+ * Page Address Extensions
+ * Virtual memory
+ * Demand paging and lazy swapping
+ * Page faults
+ * Dirty bits
+ * Page replacement algorithms
+ * What is an operating system?
+ * (Brief) history of operatng systems
+ * Page sizes - reasons for small vs large + compromise
+ * Filesystems
+ * File blocks and internal fragmentation
 
