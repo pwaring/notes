@@ -18,6 +18,8 @@
 
 ## Links
 
+ * [Memory management in C programs](http://nethack4.org/blog/memory.html)
+ * [Building C Projects](http://nethack4.org/blog/building-c.html)
  * [Deep C](http://www.slideshare.net/olvemaudal/deep-c)
  * [To Become a Good C Programmer](http://fabiensanglard.net/c/index.php)
  * [C11 atomic variables and the kernel](http://lwn.net/Articles/586838/)
