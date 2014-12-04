@@ -22,3 +22,4 @@ Useful links
  * [Kate Mosses Advice to Writers](http://www.katemosse.co.uk/index.php/kates-advice-to-writers/)
  * [Book signing etiquette](http://www.trudicanavan.com/2011/04/book-signing-etiquette/) - Trudi Canavan
  * [Most writers earn less than £600 a year](http://www.theguardian.com/books/2014/jan/17/writers-earn-less-than-600-a-year)
+ * [Top 10 tips for being a best-selling author](http://www.bbc.co.uk/news/entertainment-arts-29458847)

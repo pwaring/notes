@@ -18,6 +18,7 @@ Heard a bit about this recently, seems the current 'in thing'. Produce text in M
 
 ## Useful generic links
 
+ * http://write-for-us.pragprog.com/
  * http://blather.michaelwlucas.com/archives/1602
  * http://www.sfwa.org/for-authors/writer-beware/
  * http://www.salon.com/2013/03/21/books_arent_dead_yet/
