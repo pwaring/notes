@@ -15,6 +15,10 @@
  * Support for C++ style single-line comments, i.e. `// this is a comment`.
  * Variables no longer have to be declared before code, e.g. `for (int i = 0; i < 9, i++)`.
  * Support for variable length arrays, e.g. `int a[b][c]`.
+ 
+## Embedded C
+
+ * Declaring a variable as `const` will cause it to be stored in the program code space rather than the limited variable storage space (e.g. RAM)
 
 ## Links
 
