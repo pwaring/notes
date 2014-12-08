@@ -20,6 +20,28 @@
 
  * Declaring a variable as `const` will cause it to be stored in the program code space rather than the limited variable storage space (e.g. RAM)
 
+When laying out structs, order members in descending order of size. For example:
+
+```
+struct abc
+{
+  char a; /* 1 byte */
+  short b; /* 2 bytes */
+  char c[5]; /* 5 bytes */
+};
+```
+
+should be restructured as:
+
+```
+struct abc
+{
+  char c[5]; /* 5 bytes */
+  short b; /* 2 bytes */
+  char a; /* 1 byte */
+};
+```
+
 ## Links
 
  * [Memory management in C programs](http://nethack4.org/blog/memory.html)
