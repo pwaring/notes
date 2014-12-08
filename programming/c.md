@@ -44,6 +44,7 @@ struct abc
 
 ## Links
 
+ * [The Lost Art of C Structure Packing](http://www.catb.org/esr/structure-packing/)
  * [Memory management in C programs](http://nethack4.org/blog/memory.html)
  * [Building C Projects](http://nethack4.org/blog/building-c.html)
  * [Deep C](http://www.slideshare.net/olvemaudal/deep-c)
