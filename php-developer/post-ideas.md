@@ -1,5 +1,7 @@
 # Post ideas
 
+* How to install virtual box guest additions in an Ubuntu VM (dkms + ISO)
+
 ## Writing Perl modules using Dist::Zilla
 
 ## PHPExcel examples
