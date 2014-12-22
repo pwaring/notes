@@ -1,5 +1,31 @@
 # C
 
+## Sample Makefile
+
+CC=clang
+CFLAGS=-Weverything
+LDFLAGS=
+SOURCES=hello.c
+OBJECTS=$(SOURCES:.c=.o)
+EXECUTABLE=hello
+
+all: $(SOURCES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECTS)
+	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
+
+.c.o:
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -rf *.o $(EXECUTABLE)
+
+## Guaranteed data type sizes
+
+Portable types such as `uint16_t` (unsigned integer, 16 bits) allow data type sizes to be guaranteed across platforms and are defined in `stdint.h`.
+
+`stdint.h` is only guaranteed to exist in C99 onwards.
+
 ## Compiler options
 
  * `-D`: Define this macro - e.g. `-D_BSD_SOURCE` is the same as including `#define _BSD_SOURCE 1`.
@@ -9,6 +35,10 @@
  * `-Wall`: Enables a large number of warnings, though not all (despite the name).
  * `-Wextra`: Enables extra warnings above and beyond `-Wall`.
  * `-Werror`: Make all warnings into errors. Effectively this means that code which produces warnings will fail to compile.
+
+## Clang warning flags
+
+ * `-Weverything`: All warnings, may include new warnings in future versions (so code may compiler under `-Weverything` now but not if clang is upgraded).
 
 ## Changes from C89 to C99
 
