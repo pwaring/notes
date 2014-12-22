@@ -2,6 +2,7 @@
 
 ## Sample Makefile
 
+```
 CC=clang
 CFLAGS=-Weverything
 LDFLAGS=
@@ -19,6 +20,7 @@ $(EXECUTABLE): $(OBJECTS)
 
 clean:
 	rm -rf *.o $(EXECUTABLE)
+```
 
 ## Guaranteed data type sizes
 
