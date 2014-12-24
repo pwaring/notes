@@ -1,5 +1,24 @@
 # C++
 
+## Member initialisation lists
+
+Instead of writing a constructor like this:
+
+```
+Widget::Widget(const std::string &name)
+{
+  widgetName = name;
+}
+```
+
+you can write this:
+
+```
+Widget::Widget(const std::string &name)
+:widgetName(name)
+{}
+```
+
 ## Sample Makefile
 
 ```
