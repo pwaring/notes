@@ -1,6 +1,6 @@
 # Post ideas
 
-* WordPress 4.0.1
+* WordPress 4.1
 * Mojolicious posts on Josetteorama
 * How to install virtual box guest additions in an Ubuntu VM (dkms + ISO)
 
