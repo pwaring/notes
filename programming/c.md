@@ -51,6 +51,7 @@ Portable types such as `uint16_t` (unsigned integer, 16 bits) allow data type si
 ## Embedded C
 
  * Declaring a variable as `const` will cause it to be stored in the program code space rather than the limited variable storage space (e.g. RAM)
+ * Use the `volatile` keyword for pointers to memory-mapped registers, and global variables that are shared between threads.
 
 When laying out structs, order members in descending order of size. For example:
 
