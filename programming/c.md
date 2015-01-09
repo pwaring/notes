@@ -40,6 +40,8 @@ Portable types such as `uint16_t` (unsigned integer, 16 bits) allow data type si
 
 ## Clang warning flags
 
+Clang supports most GCC warning flags, as well as some extras.
+
  * `-Weverything`: All warnings, may include new warnings in future versions (so code may compiler under `-Weverything` now but not if clang is upgraded).
 
 ## Changes from C89 to C99
