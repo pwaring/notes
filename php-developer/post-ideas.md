@@ -1,5 +1,6 @@
 # Post ideas
 
+* Getting Python up and running - link to this post: http://markfrimston.co.uk/articles/30/quick-python-web-setup-for-apache
 * Hello World in Node.js
 * How to change package build options in Ubuntu
 * Member initialisation lists in C++
