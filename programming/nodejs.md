@@ -8,6 +8,16 @@ npm will complain unless `package.json` has a repository URL and a non-empty `RE
 
 npm packages that a project relies on can be found in the `node_modules` directory (which should be added to your `.gitignore` file).
 
+`npm install --save-dev mocha`: Lists `mocha` in the development dependencies, so it will not be included on a live site.
+
+## JSHint
+
+JSHint checks JavaScript files for various things.
+
+Install: `npm install -g jshint`
+
+Run: `jshint file.js`
+
 ## Express
 
  * Express defaults to a status code of 200, this does not have to be specified explicitly.
