@@ -117,5 +117,27 @@ Each request is processed as follows:
  1. Execute front controller- `/index.php`.
  1. Route request to PHP function based on parameters, method etc.
  1. Execute PHP function which creates and returns an appropriate `Response` object.
+ 
+## SQLite
+
+Add the following line to `app/config/parameters.yml`:
+
+``
+database_path: "%kernel.root_dir%/data.db3"
+``
+
+Uncomment the following line in `app/config/parameters.yml.dist`:
+
+```
+database_path: "%kernel.root_dir%/data.db3"
+```
+
+Uncomment the following line in `app/config/config.yml`:
+
+```
+path:     "%database_path%"
+```
+
+Run: `php app/console doctrine:database:create`
 
 
