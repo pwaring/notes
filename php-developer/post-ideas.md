@@ -9,6 +9,8 @@
 * Mojolicious posts on Josetteorama
 * How to install virtual box guest additions in an Ubuntu VM (dkms + ISO)
 * Pibrella
+* How to send emails using telnet
+* How to test web servers using telnet
 
 ## Writing Perl modules using Dist::Zilla
 
