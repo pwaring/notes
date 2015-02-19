@@ -145,3 +145,4 @@ hints.socktype = SOCK_STREAM; // TCP
 ## Links
 
  * [Beej's Guide to Network Programming](http://beej.us/guide/bgnet/)
+ * [Operational Code Authentication](http://www.distributed.net/Opcodeauth)
