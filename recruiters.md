@@ -2,6 +2,10 @@
 
  * [Why commission based recruiting is inherently flawed](http://team-prime.com/blog/why-commission-based-recruiting-is-inherently-flawed)
 
+## Job boards
+
+ * [Pieline](http://pieline.net/)
+
 ## Company guidelines
 
  * [The Scale Factory](http://www.scalefactory.com/team/note-to-recruiters)
