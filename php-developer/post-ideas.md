@@ -12,6 +12,15 @@
 * How to send emails using telnet
 * How to test web servers using telnet
 
+
+ * [WordPress to Jekyll](http://jonls.dk/2015/02/Wordpress-to-Jekyll/)
+
+## Find number of commits for company using git
+
+```
+git log --pretty=oneline --abbrev-commit --author=example.org
+```
+
 ## RPi eduroam
 
 In /etc/wpa_supplicant/wpa_supplicant.conf
