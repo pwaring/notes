@@ -24,6 +24,8 @@ Basic idea: Get the train to somewhere nice, go for a walk followed by pub lunch
  * Preston - route taken for after Northern Gathering, The Continental seems to be the pub
  * Hebden Bridge - 30-40m train, 3tph
  * Entwistle - Wayoh reservoir - http://www.thestrawburyduck.co.uk/
+ * Edale
+ * Castleton (not Rochdale)
 
 ## Ruled out
 
