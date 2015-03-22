@@ -1,18 +1,16 @@
 # Post ideas
 
-* Getting Python up and running - link to this post: http://markfrimston.co.uk/articles/30/quick-python-web-setup-for-apache
-* Hello World in Node.js
-* How to change package build options in Ubuntu
-* Member initialisation lists in C++
-* Multi-dimensional arrays in C++
-* WordPress 4.1
-* Mojolicious posts on Josetteorama
-* How to install virtual box guest additions in an Ubuntu VM (dkms + ISO)
-* Pibrella
-* How to send emails using telnet
-* How to test web servers using telnet
-
-
+ * Getting Python up and running - link to this post: http://markfrimston.co.uk/articles/30/quick-python-web-setup-for-apache
+ * Hello World in Node.js
+ * How to change package build options in Ubuntu
+ * Member initialisation lists in C++
+ * Multi-dimensional arrays in C++
+ * WordPress 4.1
+ * Mojolicious posts on Josetteorama
+ * How to install virtual box guest additions in an Ubuntu VM (dkms + ISO)
+ * Pibrella
+ * How to send emails using telnet
+ * How to test web servers using telnet
  * [WordPress to Jekyll](http://jonls.dk/2015/02/Wordpress-to-Jekyll/)
 
 ## Find number of commits for company using git
@@ -23,8 +21,9 @@ git log --pretty=oneline --abbrev-commit --author=example.org
 
 ## RPi eduroam
 
-In /etc/wpa_supplicant/wpa_supplicant.conf
+In `/etc/wpa_supplicant/wpa_supplicant.conf`
 
+```
 network = {
   identity="mbax9ab9"
   password="password"
@@ -43,13 +42,15 @@ network = {
   key_mgmt=WPA-EAP
   proactive_key_caching=1
 }
+```
 
+In `/etc/network/interfaces:`
 
-In /etc/network/interfaces:
-
+```
 allow-hotplug wlan0
 iface wlan0 inet dhcp
 pre-up wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B
+```
 
 ## Installing XFCE on RPi
 
