@@ -11,3 +11,6 @@ Linux Programming Interface
  * If a child process is orphaned because its parent process terminates, `init` (process ID 1) 'adopts' it.
  * Spatial locality: Programs tend to access memory addresses close to each other (e.g. processing an array).
  * Temporal locality: Programs tend to re-access memory addresses in a short period of time (e.g. loop variables).
+ * A successful return from `write()` doesn't guarantee that data has been written, since the kernel buffers I/O.
+ * Retrieve current file offset: `current_offset = lseek(file_descriptor, 0, SEEK_CUR);`
+ * The `*64()` functions are required in order to access large files, e.g. `open64()`. Alternatively, the `O_LARGEFILE` flag can be used with `open()`.
