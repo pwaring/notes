@@ -13,6 +13,14 @@
  * How to test web servers using telnet
  * [WordPress to Jekyll](http://jonls.dk/2015/02/Wordpress-to-Jekyll/)
 
+## Salt and Pepper
+
+See discussion on Hacker News: https://news.ycombinator.com/item?id=9277370
+
+Also:
+ * https://blog.filippo.io/salt-and-pepper/
+ * http://stackoverflow.com/questions/16891729/best-practices-salting-peppering-passwords
+
 ## Find number of commits for company using git
 
 ```
