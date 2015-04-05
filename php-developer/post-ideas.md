@@ -20,12 +20,6 @@ Also:
  * https://blog.filippo.io/salt-and-pepper/
  * http://stackoverflow.com/questions/16891729/best-practices-salting-peppering-passwords
 
-## Find number of commits for company using git
-
-```
-git log --pretty=oneline --abbrev-commit --author=example.org
-```
-
 ## RPi eduroam
 
 In `/etc/wpa_supplicant/wpa_supplicant.conf`
