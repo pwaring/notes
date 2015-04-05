@@ -5,7 +5,6 @@
  * Member initialisation lists in C++
  * Multi-dimensional arrays in C++
  * WordPress 4.1
- * Mojolicious posts on Josetteorama
  * How to install virtual box guest additions in an Ubuntu VM (dkms + ISO)
  * Pibrella
  * How to send emails using telnet
