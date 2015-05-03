@@ -1,13 +1,10 @@
-Make
-====
+# Make
 
-Filenames
----------
+## Filenames
 
 Makefiles can be called `makefile`, `Makefile` or `GNUMakefile`. Other names can be used, but require the `-f ` flag to be passed when invoking the `make` command.
 
-Basic rules
------------
+## Basic rules
 
 A makefile consists of a set of rules, split into the target, prerequisites and commands. Make will attempt to build the first target - the default - if no target is specified on the command line.
 
@@ -53,7 +50,14 @@ Be careful with wildcards, as they can have unintended effects. For example, the
 
 Wildcards in targets and prerequisites are expanded by `make`, whereas those in commands are expanded by the spawned subshell at the point of execution.
 
-Useful command line options
----------------------------
+## Defining variables
+
+To set a variable if it has not already been defined, use the `?=` operator:
+
+```
+REBUILD ?= no
+```
+
+## Useful command line options
 
 `-n`: Tells `make` to display the commands it would execute, without actually executing them.
