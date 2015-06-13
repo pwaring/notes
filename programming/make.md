@@ -58,6 +58,10 @@ To set a variable if it has not already been defined, use the `?=` operator:
 REBUILD ?= no
 ```
 
+## Sub-shell environments
+
+The environment used by `$(shell)` is identical to the one used when `make` was started.
+
 ## Useful command line options
 
 `-n`: Tells `make` to display the commands it would execute, without actually executing them.
