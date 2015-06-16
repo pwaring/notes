@@ -11,6 +11,10 @@
  * How to test web servers using telnet
  * [WordPress to Jekyll](http://jonls.dk/2015/02/Wordpress-to-Jekyll/)
 
+## Generating random data
+
+Often need to create random data for test sites - Perl modules are available for this. Demonstrate examples, also look at porting them to PHP.
+
 ## Salt and Pepper
 
 See discussion on Hacker News: https://news.ycombinator.com/item?id=9277370
