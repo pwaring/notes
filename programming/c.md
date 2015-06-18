@@ -79,6 +79,7 @@ struct abc
 
 ## Links
 
+ * [strncpy? just say no](http://blog.liw.fi/posts/strncpy/)
  * [A Guide to Undefined Behavior in C and C++](http://blog.regehr.org/archives/213)
  * [The Lost Art of C Structure Packing](http://www.catb.org/esr/structure-packing/)
  * [Memory management in C programs](http://nethack4.org/blog/memory.html)
