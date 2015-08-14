@@ -12,3 +12,7 @@ Everything will be based around a simple ledger system with the five types (Asse
 
  * Production of invoices
  * List of incoming payments
+
+## Bookkeeping notes
+
+Balance of an account is the total of all debits/credits on that account and all sub-accounts. Probably easiest to calculate balances recursively, by going all the way down to the leaf accounts and then back up again, i.e. treating the network of accounts as a tree structure.
