@@ -61,3 +61,4 @@ Named registers:
  * [Software optimization resources](http://www.agner.org/optimize/)
  * [Intel x86 JUMP quick reference](http://www.unixwiz.net/techtips/x86-jumps.html)
  * [PC assembly language tutorial](http://www.drpaulcarter.com/pcasm/)
+ * [Embedded Programming with the GNU Toolchain](http://www.bravegnu.org/gnu-eprog/)
