@@ -6,4 +6,4 @@ Blogs and websites of individual writers, some of whom have published work.
  * [Charles Stross](http://www.antipope.org/charlie/) - The Laundry series.
  * [Michael W Lucas](https://www.michaelwlucas.com/) - Absolute BSD, Absolute OpenBSD.
  * [Rachel Abbott](http://www.rachel-abbott.com/)
-
+ * [Gav Thorpe](http://gavthorpe.co.uk/) - Black Library, Games Workshop

@@ -3,7 +3,7 @@
 Things to look into:
 
  * How does one become a proofreader?
- 
+
 ## Publisher guides
 
  * [CUP: Humanities & Social Sciences](https://authornet.cambridge.org/information/proposaluk/hss/)
@@ -18,6 +18,7 @@ Heard a bit about this recently, seems the current 'in thing'. Produce text in M
 
 ## Useful generic links
 
+ * [Why Writers Need To Join The ALCS](http://gavthorpe.co.uk/2015/10/14/why-writers-need-to-join-the-alcs/)
  * http://write-for-us.pragprog.com/
  * http://blather.michaelwlucas.com/archives/1602
  * http://www.sfwa.org/for-authors/writer-beware/
