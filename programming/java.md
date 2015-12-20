@@ -68,6 +68,23 @@ Adding `syncronized` to a method means that a lock will be acquired before calli
 
 Adding the `@deprecated` tag to a class, method or variable will cause a compiler warning if the component is used.
 
+## Exceptions
+
+In Java 7, there is a new 'try with resources' which can be used like so:
+
+```
+try (
+  // Initialise resources such as Socket s = new Socket()
+  )
+{
+  // do something
+} catch ( Exception e ) {
+  // handle exception
+}
+```
+
+Resources initialised immediately after `try` will be closed when control leaves the block, either via an exception or successful completion.
+
 ## Articles
 
  * [Tuning Java Servers](http://www.infoq.com/articles/Tuning-Java-Servers)
