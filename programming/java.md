@@ -32,7 +32,7 @@ Core classes (automatically in the classpath) include:
  * `java.net`
  * `javax.swing`
 
- However, only classes in `java.lang` do not require an `import` line.
+However, only classes in `java.lang` do not require an `import` line.
 
 ## Variable types and modifiers
 
@@ -83,7 +83,7 @@ try (
 }
 ```
 
-Resources initialised immediately after `try` will be closed when control leaves the block, either via an exception or successful completion.
+Resources initialised immediately after `try` will be closed when control leaves the block, either via an exception or successful completion. Resources are closed in the reverse order to their construction, and this behaviour is only supported for classes that implement `AutoCloseable`.
 
 ## Articles
 
