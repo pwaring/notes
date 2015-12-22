@@ -85,6 +85,10 @@ try (
 
 Resources initialised immediately after `try` will be closed when control leaves the block, either via an exception or successful completion. Resources are closed in the reverse order to their construction, and this behaviour is only supported for classes that implement `AutoCloseable`.
 
+## Memory management
+
+Java objects and their instance variables are allocated on the heap, but local variables are allocated on the stack.
+
 ## Articles
 
  * [Tuning Java Servers](http://www.infoq.com/articles/Tuning-Java-Servers)
