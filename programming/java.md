@@ -89,6 +89,41 @@ Resources initialised immediately after `try` will be closed when control leaves
 
 Java objects and their instance variables are allocated on the heap, but local variables are allocated on the stack.
 
+## Graphical interfaces
+
+Two standard packages available:
+
+AWT: Attempts to mimic native look and feel for each platform. Lacks features such as trees as these are not present across all platforms.
+
+Swing: Built on AWT, but implemented entirely in Java. Same interface across all platforms. Classnames broadly similar to AWT but start with J (e.g. `JButton` as opposed to `Button`). Multiple 'themes' are available, with Nimbus being the current best option for cross-platform interfaces as of Java 6.
+
+Event objects are delivered to all objects which have registered themselves as listeners for that event. For example, to receive an `ActionEvent`, the object should register as an `ActionListener`.
+
+### Splash screens
+
+A splash screen can be added by providing the following information in a JAR manifest:
+
+```
+Manifest-Version: 1.0
+Main-Class: MyClass
+SplashScreen-Image: my-splash.png
+```
+
+### Desktop integration
+
+`java.awt.Desktop` provides integration with the desktop environment.
+
+### Menus
+
+Menus are split into three components:
+
+ * `JMenuBar`: Contains `JMenu`
+ * `JMenu`: Contains `JMenuItem`
+ * `JMenuItem`: Individual menu item.
+
+Each menu item can have a mnemonic (`setMnemonic`) and an accelerator (`setAcceletor`).
+
+
 ## Articles
 
  * [Tuning Java Servers](http://www.infoq.com/articles/Tuning-Java-Servers)
