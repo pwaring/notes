@@ -59,8 +59,8 @@ Things to note:
 
 Objects can work with threads in one of two ways:
 
- # Subclass `Thread`.
- # Implement `Runnable` and pass object to the constructor of `Thread`, then call `Thread.start()` (which calls `Object.run()`).
+ * Subclass `Thread`.
+ * Implement `Runnable` and pass object to the constructor of `Thread`, then call `Thread.start()` (which calls `Object.run()`).
 
 Adding `syncronized` to a method means that a lock will be acquired before calling that method. The lock is at the object level, so only one syncronized method in the object can be running at any one time.
 
