@@ -5,3 +5,5 @@
  * [XML and XSLT resources](https://skew.org/xml/links/)
  * [XSL-FO Is Dead, CSS Paged Media Is Prime Suspect](http://www.rockweb.co.uk/blog/2014/06/xsl-fo-is-dead,-css-paged-media-is-prime-suspect/)
  * [XML XSL - An Introduction to XML Extensible Stylesheet Language](http://www.xmlfiles.com/xsl/)
+ * [XSL Formatting Objects](https://en.wikipedia.org/wiki/XSL_Formatting_Objects)
+ * [XSL FAQ](http://www.dpawson.co.uk/xsl/index.html)
