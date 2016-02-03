@@ -22,6 +22,11 @@ Names in packages are exported if they begin with a capital letter.
 ## Articles
 
  * [Best practices for a new Go developer](https://medium.com/@IndianGuru/best-practices-for-a-new-go-developer-8660384302fc)
+ * [Go at Google: Language Design in the Service of Software Engineering](http://talks.golang.org/2012/splash.article)
+
+## Talks
+
+ * [Go for Java Programmers](https://talks.golang.org/2015/go-for-java-programmers.slide)
 
 ## Tutorials
 
