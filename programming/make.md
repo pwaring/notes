@@ -50,6 +50,11 @@ Be careful with wildcards, as they can have unintended effects. For example, the
 
 Wildcards in targets and prerequisites are expanded by `make`, whereas those in commands are expanded by the spawned subshell at the point of execution.
 
+## Special targets and rules
+
+The `.PHONY` rule can be used to mark targets that don't generate filesystem
+objects. For example: `.PHONY: clean`.
+
 ## Defining variables
 
 To set a variable if it has not already been defined, use the `?=` operator:
