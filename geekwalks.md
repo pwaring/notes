@@ -26,6 +26,7 @@ Basic idea: Get the train to somewhere nice, go for a walk followed by pub lunch
  * Entwistle - Wayoh reservoir - http://www.thestrawburyduck.co.uk/
  * Edale
  * Castleton (not Rochdale)
+ * Bamford Reservoir
 
 ## Ruled out
 
