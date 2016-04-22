@@ -8,3 +8,4 @@
  * [XSL Formatting Objects](https://en.wikipedia.org/wiki/XSL_Formatting_Objects)
  * [XSL FAQ](http://www.dpawson.co.uk/xsl/index.html)
  * [Can you put two conditions in an xslt test attribute?](http://stackoverflow.com/questions/318875/can-you-put-two-conditions-in-an-xslt-test-attribute)
+ * [How do you add a page break in a PDF with XSL-FO?](http://stackoverflow.com/questions/225654/how-do-you-add-a-page-break-in-a-pdf-with-xsl-fo)
