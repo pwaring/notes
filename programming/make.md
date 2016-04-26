@@ -2,11 +2,15 @@
 
 ## Filenames
 
-Makefiles can be called `makefile`, `Makefile` or `GNUMakefile`. Other names can be used, but require the `-f ` flag to be passed when invoking the `make` command.
+Makefiles can be called `makefile`, `Makefile` or `GNUMakefile`. Other names
+can be used, but require the `-f ` flag to be passed when invoking the `make`
+command.
 
 ## Basic rules
 
-A makefile consists of a set of rules, split into the target, prerequisites and commands. Make will attempt to build the first target - the default - if no target is specified on the command line.
+A makefile consists of a set of rules, split into the target, prerequisites and
+commands. Make will attempt to build the first target - the default - if no
+target is specified on the command line.
 
 ```
 target: prereq1 prereq2
@@ -15,18 +19,25 @@ target: prereq1 prereq2
 
 The commands section must be preceded by a tab, not spaces.
 
-An example for compiling a C source file which also requires a header into an object file might be:
+An example for compiling a C source file which also requires a header into an
+object file might be:
 
 ```
 hello.o: hello.c hello.h
 	gcc -c hello.c
 ```
 
-Effectively, this rule says: If the contents of `hello.c` or `hello.h` have changed (i.e. any prerequisites have been modified more recently than the target), `hello.o` needs to be rebuilt, using the command `gcc -c hello.c`.
+Effectively, this rule says: If the contents of `hello.c` or `hello.h` have
+changed (i.e. any prerequisites have been modified more recently than the
+target), `hello.o` needs to be rebuilt, using the command `gcc -c hello.c`.
 
-Note that although `gcc` does not need to know about `hello.h`, because it will pick up the relationship when compiling `hello.c`, `make` does need a hint, otherwise any changes to `hello.h` will not force the object file to be rebuilt.
+Note that although `gcc` does not need to know about `hello.h`, because it will
+pick up the relationship when compiling `hello.c`, `make` does need a hint,
+otherwise any changes to `hello.h` will not force the object file to be rebuilt.
 
-A rule does not have to be defined on a single line. Each time `make` encounters a target, it adds the prerequisites to the dependency graph. For example, the following rules are identical:
+A rule does not have to be defined on a single line. Each time `make` encounters
+a target, it adds the prerequisites to the dependency graph. For example, the
+following rules are identical:
 
 ```
 hello.o: hello.c hello.h
@@ -46,9 +57,13 @@ program: *.c
 	$(CC) -o $@ $^
 ```
 
-Be careful with wildcards, as they can have unintended effects. For example, the rule above will compile all files ending in `.c` in the current directory. If a new `.c` file is added - intentionally or otherwise - it will be compiled and linked into `program`.
+Be careful with wildcards, as they can have unintended effects. For example, the
+rule above will compile all files ending in `.c` in the current directory. If a
+new `.c` file is added - intentionally or otherwise - it will be compiled and
+linked into `program`.
 
-Wildcards in targets and prerequisites are expanded by `make`, whereas those in commands are expanded by the spawned subshell at the point of execution.
+Wildcards in targets and prerequisites are expanded by `make`, whereas those in
+commands are expanded by the spawned subshell at the point of execution.
 
 ## Special targets and rules
 
@@ -65,11 +80,13 @@ REBUILD ?= no
 
 ## Sub-shell environments
 
-The environment used by `$(shell)` is identical to the one used when `make` was started.
+The environment used by `$(shell)` is identical to the one used when `make` was
+started.
 
 ## Useful command line options
 
-`-n`: Tells `make` to display the commands it would execute, without actually executing them.
+`-n`: Tells `make` to display the commands it would execute, without actually
+executing them.
 
 ## Sample C++ Makefile
 
