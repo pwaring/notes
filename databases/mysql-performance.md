@@ -19,6 +19,10 @@ Show detailed information for a specific query:
 
 `SHOW PROFILE FOR QUERY 1`
 
+To clear out the query cache:
+
+`RESET QUERY CACHE`
+
 ## Locking
 
 Locking has a trade-off effect on performance. On the one hand, a high-level
