@@ -74,3 +74,7 @@ Some broad advice:
 MySQL has a limit of 61 tables per join.
 
 ## Indexes
+
+Adding a b-tree index to an InnoDB table:
+
+`ALTER TABLE my_table ADD KEY (my_column)`
