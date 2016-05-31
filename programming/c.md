@@ -22,6 +22,18 @@ clean:
 	rm -rf *.o $(EXECUTABLE)
 ```
 
+## Encapsulation
+
+Using the `static` keyword when defining a function will restrict that function
+to file-scope (likewise for variables).
+
+## Function parameters
+
+Depending on the architecture, function parameters may be loaded into registers
+when the function is called. However, as the number of registers is small, even
+on RISC architectures, having more than 4-8 function parameters may impact
+performance.
+
 ## Guaranteed data type sizes
 
 Portable types such as `uint16_t` (unsigned integer, 16 bits) allow data type sizes to be guaranteed across platforms and are defined in `stdint.h`.
@@ -49,7 +61,7 @@ Clang supports most GCC warning flags, as well as some extras.
  * Support for C++ style single-line comments, i.e. `// this is a comment`.
  * Variables no longer have to be declared before code, e.g. `for (int i = 0; i < 9, i++)`.
  * Support for variable length arrays, e.g. `int a[b][c]`.
- 
+
 ## Embedded C
 
  * Declaring a variable as `const` will cause it to be stored in the program code space rather than the limited variable storage space (e.g. RAM)
