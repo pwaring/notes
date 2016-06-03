@@ -70,6 +70,14 @@ commands are expanded by the spawned subshell at the point of execution.
 The `.PHONY` rule can be used to mark targets that don't generate filesystem
 objects. For example: `.PHONY: clean`.
 
+## Built-in variables
+
+`$@`: Full target filename to be built.
+
+`$*`: Target filename without the suffix.
+
+`$<`: File which caused the target to be made.
+
 ## Defining variables
 
 To set a variable if it has not already been defined, use the `?=` operator:
