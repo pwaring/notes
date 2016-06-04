@@ -1,3 +1,5 @@
+
+
 # MySQL performance
 
 ## Profiling queries
@@ -22,6 +24,20 @@ Show detailed information for a specific query:
 To clear out the query cache:
 
 `RESET QUERY CACHE`
+
+## Using EXPLAIN
+
+A simple test to see if indexes are being used:
+
+`EXPLAIN SELECT * FROM table WHERE column = ?`
+
+If the `rows` value returned is significantly higher than the number of rows
+fetched by the query and the `type` value is `ALL` then it is likely that MySQL
+is performing a full table scan. Adding an index can significantly reduce the
+number of rows scanned  (though not always down to 1:1 scanned:fetched).
+
+If the `extra` value is `Using where` then this also suggests that MySQL is
+discarding rows after scanning them, which may have performance implications.
 
 ## Locking
 
