@@ -96,6 +96,21 @@ started.
 `-n`: Tells `make` to display the commands it would execute, without actually
 executing them.
 
+## Parallel builds
+
+If a Makefile has been written with parallelism in mind, it is possible to tell
+`make` to build in parallel using the following option:
+
+`-j [number of parallel builds]` or `--jobs=[number of parallel builds]`
+
+If GNU Make 4.0 or later is available, the `--output-sync` option will keep the
+output syncronised, otherwise the output will be sorted based on the order of
+execution, which can make debugging difficult.
+
+Problems which may occur when building in parallel:
+
+ * Missing dependencies.
+
 ## Sample C++ Makefile
 
 ```
