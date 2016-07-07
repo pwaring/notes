@@ -25,7 +25,7 @@ All Docker containers can be removed with the following command:
 
 ```
 docker rm -v $(docker ps -aq -f status=exited)
-``
+```
 
 ## Dockerfile
 
