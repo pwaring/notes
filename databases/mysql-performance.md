@@ -1,6 +1,13 @@
-
-
 # MySQL performance
+
+## Connections
+
+The MySQL protocol is half-duplex, which means that it can send or receive
+messages, but not both at the same time.
+
+## Query cache
+
+Looking up an item in the query cache is a hash operation.
 
 ## Profiling queries
 
