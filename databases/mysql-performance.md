@@ -64,6 +64,23 @@ applications.
 
 ## Storage engines
 
+To find the storage engine for a given table:
+
+```
+SELECT engine FROM information_schema.tables
+WHERE
+  table_schema = 'database'
+  AND table_name = 'table'
+```
+
+Storage engines for all tables in a given database:
+
+```
+SELECT table_name, engine FROM information_schema.tables
+WHERE
+  table_schema = 'database'
+```
+
 ### MyISAM
 
 MyISAM supports compressed tables using `myisampack`. Compressed tables use up
