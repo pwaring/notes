@@ -37,3 +37,14 @@ of the base image. For example:
 ```
 FROM debian:jessie
 ```
+
+The container can then be built using:
+
+```
+docker build .
+```
+
+Each line in the Dockerfile is a *layer*, implemented as a read-only filesystem
+on top of the image. Due to the cost of large numbers of layers, and the fact
+that some filesystems (e.g. AUFS) have a hard limit, you may see many commands
+combined into a single RUN instruction.
