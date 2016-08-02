@@ -36,25 +36,29 @@ performance.
 
 ## Guaranteed data type sizes
 
-Portable types such as `uint16_t` (unsigned integer, 16 bits) allow data type sizes to be guaranteed across platforms and are defined in `stdint.h`.
+Portable types such as `uint16_t` (unsigned integer, 16 bits) allow data type
+sizes to be guaranteed across platforms and are defined in `stdint.h`.
 
 `stdint.h` is only guaranteed to exist in C99 onwards.
 
 ## Compiler options
 
- * `-D`: Define this macro - e.g. `-D_BSD_SOURCE` is the same as including `#define _BSD_SOURCE 1`.
+ * `-D`: Define this macro - e.g. `-D_BSD_SOURCE` is the same as including
+ `#define _BSD_SOURCE 1`.
 
 ## GCC warning flags
 
  * `-Wall`: Enables a large number of warnings, though not all (despite the name).
  * `-Wextra`: Enables extra warnings above and beyond `-Wall`.
- * `-Werror`: Make all warnings into errors. Effectively this means that code which produces warnings will fail to compile.
+ * `-Werror`: Make all warnings into errors. Effectively this means that code
+ which produces warnings will fail to compile.
 
 ## Clang warning flags
 
 Clang supports most GCC warning flags, as well as some extras.
 
- * `-Weverything`: All warnings, may include new warnings in future versions (so code may compiler under `-Weverything` now but not if clang is upgraded).
+ * `-Weverything`: All warnings, may include new warnings in future versions
+ (so code may compiler under `-Weverything` now but not if clang is upgraded).
 
 ## Changes from C89 to C99
 
@@ -64,8 +68,10 @@ Clang supports most GCC warning flags, as well as some extras.
 
 ## Embedded C
 
- * Declaring a variable as `const` will cause it to be stored in the program code space rather than the limited variable storage space (e.g. RAM)
- * Use the `volatile` keyword for pointers to memory-mapped registers, and global variables that are shared between threads.
+ * Declaring a variable as `const` will cause it to be stored in the program
+ code space rather than the limited variable storage space (e.g. RAM).
+ * Use the `volatile` keyword for pointers to memory-mapped registers, and global
+ variables that are shared between threads.
 
 When laying out structs, order members in descending order of size. For example:
 
