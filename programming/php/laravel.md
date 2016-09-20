@@ -25,6 +25,22 @@ bash ./init.sh
 
 Edit `~/.homestead/Homestead.yaml`.
 
+## Projects
+
+Create a new project by running:
+
+```bash
+laravel new projectName
+```
+
+The `laravel` command may not be available in `$PATH`. One way around this on
+Linux systems is to create a symbolic link to the `laravel` binary which is
+downloaded by Composer:
+
+```bash
+ln -s ~/.config/composer/vendor/laravel/installer/laravel .
+```
+
 ## Routing
 
 Simple route definitions can be implemented by using closures, e.g.
