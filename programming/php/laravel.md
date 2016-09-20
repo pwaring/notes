@@ -89,3 +89,7 @@ This will create a file:
 ```
 app/Http/Controllers/StaticController.php
 ```
+
+## Views
+
+Views are stored under: `resources/views`.
