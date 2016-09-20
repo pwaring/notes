@@ -61,6 +61,21 @@ be defined first.
 Routes can be grouped, which allows common configuration settings to be defined
 once.
 
+All defined routes can be listed by running:
+
+```bash
+php artisan route:list
+```
+
+Routes can be cached by running:
+
+```bash
+php artisan route:cache
+```
+
+However, from now on Laravel will only look at the cache, so you must run the
+above command each time you make any changes to the routing file.
+
 ## Controllers
 
 Create a controller by running:
