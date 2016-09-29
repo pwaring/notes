@@ -109,3 +109,10 @@ app/Http/Controllers/StaticController.php
 ## Views
 
 Views are stored under: `resources/views`.
+
+### Templates
+
+By default Laravel supports PHP templates and its own templating system called
+Blade. For developers who prefer Twig, the [TwigBridge](https://github.com/rcrowe/TwigBridge)
+component provides a bridge which allows files ending `.twig` to be loaded
+automatically.
