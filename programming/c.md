@@ -97,6 +97,7 @@ struct abc
 
 ## Links
 
+ * [How to C](https://matt.sh/howto-c)
  * [Understanding C by learning assembly](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly)
  * [Understanding glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
  * [strncpy? just say no](http://blog.liw.fi/posts/strncpy/)
