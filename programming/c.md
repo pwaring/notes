@@ -77,6 +77,8 @@ function calls (e.g. `fork`), compile using MinGW and then use `cygcheck` to
 ensure that your software no longer links against the `cygwin1.dll`. Or you can
 pay RedHat lots of money for an opt-out on releasing your code.
 
+`cygcheck` has similar functionality to `ldd` (Linux) and `otool -L` (macOS).
+
 ## Embedded C
 
  * Declaring a variable as `const` will cause it to be stored in the program
