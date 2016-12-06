@@ -66,6 +66,17 @@ Clang supports most GCC warning flags, as well as some extras.
  * Variables no longer have to be declared before code, e.g. `for (int i = 0; i < 9, i++)`.
  * Support for variable length arrays, e.g. `int a[b][c]`.
 
+## Cygwin
+
+C programs compiled under Cygwin will depend on `cygwin1.dll`, regardless of
+whether any POSIX functions are used. You can distribute this DLL alongside your
+program, but if you do your source code must be made available.
+
+To avoid having to release your source code, you need to remove any POSIX
+function calls (e.g. `fork`), compile using MinGW and then use `cygcheck` to
+ensure that your software no longer links against the `cygwin1.dll`. Or you can
+pay RedHat lots of money for an opt-out on releasing your code.
+
 ## Embedded C
 
  * Declaring a variable as `const` will cause it to be stored in the program
