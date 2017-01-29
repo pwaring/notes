@@ -12,6 +12,10 @@ First of all, authors are busy people, with deadlines to meet. Even if they have
 
 Secondly, your plot may be similar to something the author is already working on. In fact, given the limited number of truly unique plots, and the fact that you probably enjoy similar types of literature, there is likely to be at least some level of overlap. This puts the author in an awkward situation: if they read your work and then publish something similar, they open themselves up to claims of having stolen your ideas. Even if these claims are false, they can cause resentment and possibly even derail book or film deals if the authorship is in doubt.
 
+## Useful websites
+
+ * [Fantasy Author's Handbook](https://fantasyhandbook.wordpress.com/)
+
 ## Useful links
 
  * [Neil Gaiman - FAQs](http://www.neilgaiman.com/p/FAQs)
