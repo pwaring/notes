@@ -1,5 +1,33 @@
 # Go
 
+## Variables
+
+Variables are defined as:
+
+```go
+var name type = value
+```
+
+For example:
+
+```go
+var x string = "Hello"
+```
+
+The type can be inferred if an initial value is given, e.g.
+
+```go
+var x = "Hello"
+```
+
+or by using the `:=` operator:
+
+```go
+x := "Hello"
+```
+
+Constants can be defined by using the `const` keyword instead of `var`.
+
 ## Imports
 
 Standard import notation:

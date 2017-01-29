@@ -36,8 +36,7 @@
  * Dirty bits
  * Page replacement algorithms
  * What is an operating system?
- * (Brief) history of operatng systems
+ * (Brief) history of operating systems
  * Page sizes - reasons for small vs large + compromise
  * Filesystems
  * File blocks and internal fragmentation
-

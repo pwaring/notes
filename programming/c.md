@@ -58,13 +58,26 @@ sizes to be guaranteed across platforms and are defined in `stdint.h`.
 Clang supports most GCC warning flags, as well as some extras.
 
  * `-Weverything`: All warnings, may include new warnings in future versions
- (so code may compiler under `-Weverything` now but not if clang is upgraded).
+ (so code may compile under `-Weverything` now but not if clang is upgraded).
 
 ## Changes from C89 to C99
 
  * Support for C++ style single-line comments, i.e. `// this is a comment`.
  * Variables no longer have to be declared before code, e.g. `for (int i = 0; i < 9, i++)`.
  * Support for variable length arrays, e.g. `int a[b][c]`.
+
+## Cygwin
+
+C programs compiled under Cygwin will depend on `cygwin1.dll`, regardless of
+whether any POSIX functions are used. You can distribute this DLL alongside your
+program, but if you do your source code must be made available.
+
+To avoid having to release your source code, you need to remove any POSIX
+function calls (e.g. `fork`), compile using MinGW and then use `cygcheck` to
+ensure that your software no longer links against the `cygwin1.dll`. Or you can
+pay RedHat lots of money for an opt-out on releasing your code.
+
+`cygcheck` has similar functionality to `ldd` (Linux) and `otool -L` (macOS).
 
 ## Embedded C
 
@@ -97,6 +110,8 @@ struct abc
 
 ## Links
 
+ * [Why does calloc exist?](https://vorpus.org/blog/why-does-calloc-exist/) - Good explanation of the differences between `calloc` and `malloc` followed by `memset`.
+ * [How to C](https://matt.sh/howto-c)
  * [Understanding C by learning assembly](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly)
  * [Understanding glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
  * [strncpy? just say no](http://blog.liw.fi/posts/strncpy/)
