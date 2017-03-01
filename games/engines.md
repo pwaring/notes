@@ -8,3 +8,4 @@
 
  * [OpenMW](https://openmw.org) - Open (GPLv3) version of Morrowind engine.
  * [Godot](https://godotengine.org)
+ * [gemRB](http://www.gemrb.org) - Open clone of Infinity Engine.
