@@ -28,6 +28,12 @@ x := "Hello"
 
 Constants can be defined by using the `const` keyword instead of `var`.
 
+## Loops
+
+Go only supports the `for` loop - unlike other languages it lacks `while`, `do
+while` etc. However, it is possible to emulate other loop constructs using `for`.
+
+
 ## Imports
 
 Standard import notation:
