@@ -9,6 +9,23 @@
  * `gtk_widget_show_all()` recursively draws the widget and all its children.
  * `gtk_widget_hide_all()` recursives hides and sets the hidden flag on the
  widget and all its children.
+ * `gtk_widget_set_sensitive` sets a widget as active or inactive. Children take
+ their sensitivity from their parents and any change to the parent will
+ automatically affect the children.
+ * `gtk_window_set_icon_from_file` sets the file icon, and will be automatically
+ resized as required.
+
+## Signals and callbacks
+
+Signals can be connected at any point within the application, including within
+callback functions. However, it is sensible to initialise any critical callbacks
+before calling `gtk_main()`.
+
+The underscore and dash characters are interchangeable in signal names, so
+"destroy_event" and "destroy-event" refer to the same signal.
+
+`g_signal_connect()` returns a handler identifier which can be used with the
+`g_signal_handler` functions.
 
 ## Simple Makefile
 
