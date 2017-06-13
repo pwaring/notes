@@ -48,3 +48,7 @@ Each line in the Dockerfile is a *layer*, implemented as a read-only filesystem
 on top of the image. Due to the cost of large numbers of layers, and the fact
 that some filesystems (e.g. AUFS) have a hard limit, you may see many commands
 combined into a single RUN instruction.
+
+## Resources
+
+ * [dockerscan](https://github.com/cr0hn/dockerscan)
