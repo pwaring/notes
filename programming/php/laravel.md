@@ -73,6 +73,25 @@ Returning a database query from a route casts it to JSON.
 
 `dd($var)` dumps `$var` and then calls `die()`.
 
+Use the `route()` helper instead of `url()` to refer to routes.
+
+Route groups allow you to group routes together and share configuration settings
+without having to repeat them for each route.
+
+Parameterised subdomain routing can be used for multitenancy sites where each
+client gets its own subdomain:
+
+```
+Route::group(['domain' => '{client}.example.org'], function() {
+  Route::get('/', function($client) {
+
+    });
+  Route::get('/users/{$id}', function($client, $id) {
+
+    });
+});
+```
+
 ## Routing
 
 Simple route definitions can be implemented by using closures, e.g.
