@@ -2,28 +2,30 @@
 
 ## Requirements
 
- * PHP 5.6.4
+ * PHP 7.0.0 (as of Laravel 5.5)
  * OpenSSL extension
  * PDO extension
  * MBstring extension
  * Tokenizer extension
+ * XML extension
 
-## Installing Homestead
+## Installation
 
-Clone from GitHub:
+You must use an up to date version of Composer otherwise the installation may
+fail.
 
-```bash
-git clone https://github.com/laravel/homestead.git ~/dev/homestead
+```
+composer global require "laravel/installer"
 ```
 
-Run initialisation script:
+Then add to `~/.bashrc` or equivalent:
 
-```bash
-cd ~/dev/homestead
-bash ./init.sh
+```
+export PATH="${HOME}/.config/composer/vendor/bin:${PATH}"
 ```
 
-Edit `~/.homestead/Homestead.yaml`.
+Remember to run `composer self-update && composer global update` on a regular
+basis.
 
 ## Projects
 
@@ -33,13 +35,43 @@ Create a new project by running:
 laravel new projectName
 ```
 
-The `laravel` command may not be available in `$PATH`. One way around this on
-Linux systems is to create a symbolic link to the `laravel` binary which is
-downloaded by Composer:
+## General
 
-```bash
-ln -s ~/.config/composer/vendor/laravel/installer/laravel .
+`./vendor/bin/phpunit` runs all unit tests (`tests/*Test.php`).
+
+Database credentials and other configuration goes in `.env`.
+
+All variables set in `.env` will be loaded into the `$_ENV` superglobal and are
+also available via the `env` helper: `env('APP_DEBUG', false)`. The second
+parameter is the default, which will be returned if no environment variable exists
+for the given key.
+
+Run `php artisan config:cache` as part of production deployment.
+
+`php artisan migrate` will turn PHP schema into a database.
+
+Default text field sizes will break on MariaDB <= 10.2.1 and MySQL <= 5.7.6 due
+to the number of bytes used for each character. Upgrade to a supported version
+or add the following to `app/Providers/AppServiceProviders.php`:
+
 ```
+<?php
+
+ use Illuminate\Support\Facades\Schema;
+
+ public function boot()
+ {
+    Schema::defaultStringLength(191);
+ }
+```
+
+The default character set used by Laravel from 5.4 onwards is `utf8mb4`. Basically
+the maximum length of a key is 767 bytes, and if 4 bytes are used per character
+then this effectively limits key strings to 191 characters.
+
+Returning a database query from a route casts it to JSON.
+
+`dd($var)` dumps `$var` and then calls `die()`.
 
 ## Routing
 
