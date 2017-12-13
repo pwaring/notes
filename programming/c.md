@@ -110,6 +110,7 @@ struct abc
 
 ## Links
 
+ * [Some Dark Corners of C](https://docs.google.com/presentation/d/1h49gY3TSiayLMXYmRMaAEMl05FaJ-Z6jDOWOz3EsqqQ/preview#slide=id.gec7eb408_3500)
  * [Why does calloc exist?](https://vorpus.org/blog/why-does-calloc-exist/) - Good explanation of the differences between `calloc` and `malloc` followed by `memset`.
  * [How to C](https://matt.sh/howto-c)
  * [Understanding C by learning assembly](https://www.recurse.com/blog/7-understanding-c-by-learning-assembly)
