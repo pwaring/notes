@@ -57,12 +57,12 @@ or add the following to `app/Providers/AppServiceProviders.php`:
 ```
 <?php
 
- use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Schema;
 
- public function boot()
- {
-    Schema::defaultStringLength(191);
- }
+public function boot()
+{
+  Schema::defaultStringLength(191);
+}
 ```
 
 The default character set used by Laravel from 5.4 onwards is `utf8mb4`. Basically
@@ -96,7 +96,7 @@ Route::group(['domain' => '{client}.example.org'], function() {
 
 Simple route definitions can be implemented by using closures, e.g.
 
-```php
+```
 Route::get('/about', function() {
   return 'About';
 });
@@ -108,7 +108,7 @@ also cannot take advantage of Laravel's route caching.
 A common alternative to closures is to pass the name and method of a controller
 as a string:
 
-```php
+```
 Route::get('/about', 'WelcomeController@about');
 ```
 
@@ -117,7 +117,7 @@ controller.
 
 Regular expressions can be set for parameters:
 
-```php
+```
 Route::get('users/{id}', function ($id) {
 })->where('id', '[0-9]+');
 ```
@@ -130,13 +130,13 @@ once.
 
 All defined routes can be listed by running:
 
-```bash
+```
 php artisan route:list
 ```
 
 Routes can be cached by running:
 
-```bash
+```
 php artisan route:cache
 ```
 
@@ -147,23 +147,98 @@ above command each time you make any changes to the routing file.
 
 Create a controller by running:
 
-```bash
-php artisan make:controller StaticController
+```
+php artisan make:controller PagesController
 ```
 
 This will create a file:
 
 ```
-app/Http/Controllers/StaticController.php
+app/Http/Controllers/PagesController.php
 ```
+
+Add methods such as:
+
+```
+public function about()
+{
+  return view('about');
+}
+```
+
+Route them:
+
+```
+Route::get('/about', 'PagesController@about')
+```
+
+Create a resource controller with:
+
+```
+php artisan make:controller TasksController --resource
+```
+
+This will add methods such as `index`, `create` etc.
+
+You can build routes for all these resources like so:
+
+```
+Route::resource('tasks', 'TasksController');
+```
+
+`php artisan route:list` will list all of your routes.
 
 ## Views
 
 Views are stored under: `resources/views`.
 
-### Templates
+## Eloquent
+
+Eloquent is Laravel's Active Record implementation.
+
+### Database
+
+Migrations define the modifications which should be run when making the migration
+*up* and *down*. Migrations are run in order of date ascending, hence filenames
+like `2017_01_01_00000_create_tasks_table.php`.
+
+Modifying or dropping a column requires `doctrine/dbal`.
+
+When using SQLite, you can only drop or modify one column per migration closure.
+
+`php artisan migrate` runs all outstanding migrations. Laravel keeps track of
+which migrations have already been run.
+
+`php artisan migrate:reset` rolls back all database migrations.
+
+`php artisan migrate:status` shows the status of each migration, i.e. whether it
+has been run or not.
+
+`php artisan migrate --seed` will run a seeder along with the migration.
+
+## Artisan
+
+`php artisan make:model Club -m` creates a model with a migration.
+
+`php artisan make:controller ClubsController --resource`
+
+## tinker
+
+`php artisan tinker` is a command line tool which allows you to run queries.
+
+## File locations
+
+Models: `app/Club.php`
+
+Controllers: `app/Http/Controllers/ClubsController.php`
+
+## Templates
 
 By default Laravel supports PHP templates and its own templating system called
 Blade. For developers who prefer Twig, the [TwigBridge](https://github.com/rcrowe/TwigBridge)
 component provides a bridge which allows files ending `.twig` to be loaded
 automatically.
+
+### Blade
+
+Defaults can be provided if a variable is not set: `{{ $title or 'Default' }}`
