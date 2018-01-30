@@ -37,3 +37,34 @@ Environment variables are loaded from `.env` if the `APP_ENV` variable isn't set
 ## Debugging
 
 `php bin/console debug:router`: List all routes.
+
+## Basic controller
+
+```php
+<?php
+
+namespace App\Controller;
+
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+class DefaultController extends AbstractController
+{
+  /**
+   * @Route("/")
+   */
+  public function index()
+  {
+    return new Response('Hello World');
+  }
+
+  /**
+   * @Route("/hello/{name}")
+   */
+  public function hello($name)
+  {
+    return $this->render("default/hello.html.twig", ['name' => $name]);
+  }
+}
+```
