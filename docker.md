@@ -1,5 +1,9 @@
 # Docker
 
+## Installation
+
+For storage, prefer `overlay2` (kernels 4.x and above) over `aufs`.
+
 ## Containers
 
 With containers, the host kernel is shared, therefore the containers must use
