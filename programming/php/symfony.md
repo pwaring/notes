@@ -9,6 +9,8 @@ composer require sec-checker
 composer require server --dev
 composer require annotations
 composer require twig
+composer require asset
+composer require form
 composer require profiler --dev
 ```
 
@@ -40,6 +42,9 @@ Environment variables are loaded from `.env` if the `APP_ENV` variable isn't set
 
 ## Basic controller
 
+Note: `AbstractController` is preferred over `Controller` as the former is more
+restrictive and does not allow you to call services directly.
+
 ```php
 <?php
 
@@ -68,3 +73,24 @@ class DefaultController extends AbstractController
   }
 }
 ```
+
+## Query parameters
+
+Query parameters can be accessed via the `Request` class:
+
+```php
+public function index(Request $request)
+{
+  // use $request
+}
+```
+
+## Errors
+
+For 404 responses, throw a `createNotFoundException`:
+
+```php
+throw $this->createNotFoundException('No such ID');
+```
+
+Throwing any `Exception` class will return a 500 response.
