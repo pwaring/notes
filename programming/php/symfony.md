@@ -14,6 +14,14 @@ composer require form
 composer require profiler --dev
 ```
 
+## Directory structure
+
+The default directory structure is:
+
+ * `public`: Equivalent of `public_html` or `htdocs`. Contains the single front controller by default as `index.php`.
+ * `config`: Configuration files.
+ * `src`: All your PHP code.
+
 ## Routes
 
 Although routes can be specified in various places, annotations are the recommended
